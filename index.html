@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MN Realtor Goa | Find Exceptional Properties in Goa – Villas, Plots & Heritage Homes</title>
+<meta name="description" content="MN Realtor Goa by Modinaa. Goan | Dependable. Verified & TCP approved plots, Private Luxury Villas, Goan heritage houses. 3Cr+ portfolio in Siolim, Saligao, Parra, Aldona, Moira & North Goa.">
+<meta name="keywords" content="MN Realtor Goa, Modinaa Goa realtor, Goa luxury villas, TCP approved plots Goa, Goan heritage houses, Siolim, Saligao, Parra, Aldona, Moira, Tivim, Colvale">
+<meta property="og:title" content="MN Realtor Goa – Find Exceptional Properties in Goa">
+<meta property="og:description" content="Verified plots, private luxury villas and distinctive Goan heritage homes. Goan | Dependable.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80&auto=format&fit=crop">
+<meta property="og:url" content="https://mnrealtorgoa.in/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://mnrealtorgoa.in/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23211D1A'/%3E%3Ctext x='50' y='62' font-family='serif' font-size='36' fill='%23E9B86E' text-anchor='middle'%3EMN%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"MN Realtor Goa","founder":{"@type":"Person","name":"Modinaa"},"areaServed":"Goa, India","telephone":"+91 70454 31681","sameAs":["https://www.instagram.com/modina.mnrealtor"],"description":"Goan | Dependable. Verified & TCP approved plots, Private Luxury Villas, Goan heritage houses. 3Cr+ portfolio.","url":"https://mnrealtorgoa.in/"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: { cream:'#FFFCF7', sand:'#FFF4E9', blush:'#FFE9DE', peach:'#FFD8BE', coral:'#FF6B5B', terracotta:'#D96C47', amberlux:'#E99A3C', gold:'#C9A86A', golddeep:'#9C6B2E', charcoal:'#211D1A', cocoa:'#3A322D', stonewarm:'#8A7E74' }, fontFamily: { serif:['"Playfair Display"','serif'], sans:['Outfit','sans-serif'] }, boxShadow: { warm:'0 20px 60px -15px rgba(217,108,71,0.25)', card:'0 12px 40px -12px rgba(33,29,26,0.18)', glow:'0 0 0 1px rgba(233,184,110,0.35), 0 18px 50px -12px rgba(255,107,91,0.35)' } } }}
+</script>
+<style>
+*{ -webkit-tap-highlight-color:transparent }
+html{ scroll-behavior:smooth }
+html.lenis, html.lenis body{ height:auto }
+.lenis.lenis-smooth{ scroll-behavior:auto !important }
+body{ font-family:'Outfit',sans-serif; background:#FFFCF7; color:#211D1A; overflow-x:hidden }
+.font-serif{ font-family:'Playfair Display',serif }
+::selection{ background:#FF6B5B; color:white }
+::-webkit-scrollbar{ width:10px; height:8px }
+::-webkit-scrollbar-track{ background:#FFF4E9 }
+::-webkit-scrollbar-thumb{ background:linear-gradient(180deg,#E99A3C,#FF6B5B); border-radius:99px }
+.no-scrollbar::-webkit-scrollbar{ display:none } .no-scrollbar{ scrollbar-width:none }
+/* SCROLL PROGRESS */
+#scrollProgress{ position:fixed; top:0; left:0; right:0; height:3.5px; z-index:95; background:linear-gradient(90deg,#E99A3C,#FF6B5B,#C9A86A); transform-origin:0 50%; transform:scaleX(0); box-shadow:0 2px 12px rgba(255,107,91,.5) }
+/* SIDE DOTS */
+#sideDots{ position:fixed; right:18px; top:50%; transform:translateY(-50%); z-index:45; display:none; flex-direction:column; gap:10px }
+@media(min-width:1280px){ #sideDots{ display:flex } }
+.side-dot{ width:10px; height:10px; border-radius:99px; background:rgba(33,29,26,.18); border:1px solid rgba(201,168,106,.5); transition:all .4s; cursor:pointer; position:relative }
+.side-dot.active{ height:32px; background:linear-gradient(180deg,#E99A3C,#FF6B5B); border-color:transparent; box-shadow:0 4px 14px rgba(255,107,91,.4) }
+.side-dot:hover::after{ content:attr(data-label); position:absolute; right:20px; top:50%; transform:translateY(-50%); background:#211D1A; color:#FFE9DE; font-size:11px; padding:5px 10px; border-radius:99px; white-space:nowrap; letter-spacing:.05em }
+/* loader */
+#loader{ position:fixed; inset:0; z-index:100; background:#211D1A; display:flex; flex-direction:column; align-items:center; justify-content:center; transition:opacity .8s ease, visibility .8s }
+#loader.hide{ opacity:0; visibility:hidden }
+.loader-ring{ width:92px; height:92px; border-radius:50%; border:1px solid rgba(233,184,110,.3); display:flex; align-items:center; justify-content:center; position:relative }
+.loader-ring::after{ content:''; position:absolute; inset:-1px; border-radius:50%; border-top:2px solid #E9B86E; animation:spin 1.2s linear infinite }
+@keyframes spin{ to{ transform:rotate(360deg) } }
+.loader-bar{ width:180px; height:2px; background:rgba(255,255,255,.12); border-radius:99px; margin-top:22px; overflow:hidden }
+.loader-bar span{ display:block; height:100%; width:0; background:linear-gradient(90deg,#E99A3C,#FF6B5B); animation:loadfill 2s ease forwards }
+@keyframes loadfill{ to{ width:100% } }
+/* hero */
+.kenburns{ animation:kenburns 18s ease-in-out infinite alternate } @keyframes kenburns{ 0%{ transform:scale(1) } 100%{ transform:scale(1.15) } }
+.hero-slide{ position:absolute; inset:0; opacity:0; transition:opacity 1.8s ease } .hero-slide.active{ opacity:1 }
+.gradient-warm{ background:linear-gradient(135deg,#FF8A5B 0%,#E99A3C 35%,#D96C47 65%,#B85C4A 100%) }
+.text-gradient{ background:linear-gradient(100deg,#B85C2E,#E99A3C 30%,#FF6B5B 60%,#C9A86A); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text }
+.glass{ background:rgba(255,255,255,.86); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px) }
+.glass-dark{ background:rgba(33,29,26,.62); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px) }
+/* SCROLL REVEALS */
+.reveal{ opacity:0; transform:translateY(46px); transition:opacity .9s cubic-bezier(.22,1,.36,1), transform 1s cubic-bezier(.22,1,.36,1) } .reveal.visible{ opacity:1; transform:none }
+.reveal-left{ opacity:0; transform:translateX(-56px); transition:all 1s cubic-bezier(.22,1,.36,1) } .reveal-left.visible{ opacity:1; transform:none }
+.reveal-right{ opacity:0; transform:translateX(56px); transition:all 1s cubic-bezier(.22,1,.36,1) } .reveal-right.visible{ opacity:1; transform:none }
+.reveal-zoom{ opacity:0; transform:scale(.92); transition:all 1s cubic-bezier(.22,1,.36,1) } .reveal-zoom.visible{ opacity:1; transform:scale(1) }
+.img-reveal{ clip-path:inset(10% 7% 10% 7% round 24px); transition:clip-path 1.3s cubic-bezier(.22,1,.36,1) } .img-reveal.visible{ clip-path:inset(0 0 0 0 round 24px) }
+.stagger>*{ opacity:0; transform:translateY(32px); transition:all .85s cubic-bezier(.22,1,.36,1) }
+.stagger.visible>*:nth-child(1){ transition-delay:.05s; opacity:1; transform:none } .stagger.visible>*:nth-child(2){ transition-delay:.15s; opacity:1; transform:none }
+.stagger.visible>*:nth-child(3){ transition-delay:.25s; opacity:1; transform:none } .stagger.visible>*:nth-child(4){ transition-delay:.35s; opacity:1; transform:none }
+.stagger.visible>*:nth-child(5){ transition-delay:.45s; opacity:1; transform:none } .stagger.visible>*:nth-child(6){ transition-delay:.55s; opacity:1; transform:none }
+.stagger.visible>*:nth-child(7){ transition-delay:.65s; opacity:1; transform:none } .stagger.visible>*:nth-child(8){ transition-delay:.75s; opacity:1; transform:none }
+/* scroll line grow */
+.grow-line{ transform:scaleX(0); transform-origin:left; transition:transform 1.2s cubic-bezier(.22,1,.36,1) } .grow-line.visible{ transform:scaleX(1) }
+/* scroll hint */
+.scroll-hint-line{ width:1.5px; height:56px; background:rgba(255,255,255,.2); position:relative; overflow:hidden; border-radius:99px }
+.scroll-hint-line::after{ content:''; position:absolute; top:-40%; left:0; width:100%; height:40%; background:linear-gradient(180deg,transparent,#E9B86E); animation:scrollHint 1.8s cubic-bezier(.65,0,.35,1) infinite }
+@keyframes scrollHint{ 0%{ top:-40% } 100%{ top:110% } }
+.mouse{ width:26px; height:42px; border:1.5px solid rgba(255,255,255,.5); border-radius:99px; display:flex; justify-content:center; padding-top:8px }
+.mouse span{ width:4px; height:8px; border-radius:99px; background:#E9B86E; animation:wheel 1.8s ease infinite } @keyframes wheel{ 0%{ transform:translateY(0); opacity:1 } 100%{ transform:translateY(12px); opacity:0 } }
+/* marquee */
+@keyframes marquee{ 0%{ transform:translateX(0) } 100%{ transform:translateX(-50%) } } .marquee-track{ display:flex; width:max-content; animation:marquee 30s linear infinite } .marquee-track:hover{ animation-play-state:paused }
+/* cards */
+.prop-card{ transition:transform .6s cubic-bezier(.22,1,.36,1), box-shadow .5s } .prop-card:hover{ transform:translateY(-8px); box-shadow:0 28px 60px -18px rgba(217,108,71,.35) }
+.prop-card img.card-img{ transition:transform 1.2s cubic-bezier(.22,1,.36,1) } .prop-card:hover img.card-img{ transform:scale(1.08) }
+.loc-card img{ transition:transform 1.4s cubic-bezier(.22,1,.36,1) } .loc-card:hover img{ transform:scale(1.1) }
+.btn-shine{ position:relative; overflow:hidden } .btn-shine::after{ content:''; position:absolute; top:0; left:-80%; width:50%; height:100%; background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent); transform:skewX(-20deg); transition:left .6s } .btn-shine:hover::after{ left:130% }
+.float-soft{ animation:floaty 6s ease-in-out infinite } @keyframes floaty{ 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-12px) } }
+.blob{ position:absolute; border-radius:50%; filter:blur(90px); opacity:.5; pointer-events:none }
+/* nav */
+#navbar{ transition:all .5s ease } #navbar.scrolled{ background:rgba(255,252,247,.88); backdrop-filter:blur(20px); box-shadow:0 10px 40px -12px rgba(33,29,26,.15); border-bottom:1px solid rgba(233,184,110,.25) }
+#navbar.scrolled .nav-link{ color:#211D1A !important } #navbar.scrolled .brand-text{ color:#211D1A !important }
+#navbar.scrolled .nav-cta-outline{ border-color:rgba(33,29,26,.2) !important; color:#211D1A !important }
+.nav-link{ position:relative } .nav-link::after{ content:''; position:absolute; left:0; bottom:-4px; width:0; height:2px; background:linear-gradient(90deg,#E99A3C,#FF6B5B); transition:width .4s; border-radius:99px } .nav-link:hover::after,.nav-link.active::after{ width:100% }
+/* page */
+.page-view{ display:none; animation:pageIn .7s cubic-bezier(.22,1,.36,1) } .page-view.active{ display:block } @keyframes pageIn{ from{ opacity:0; transform:translateY(18px) } to{ opacity:1; transform:none } }
+/* accordion */
+.faq-answer{ max-height:0; overflow:hidden; transition:max-height .6s cubic-bezier(.22,1,.36,1) } .faq-item.open .faq-answer{ max-height:500px } .faq-item.open .faq-icon{ transform:rotate(45deg) } .faq-icon{ transition:transform .4s }
+.thumb{ border:2px solid transparent; transition:all .3s; cursor:pointer } .thumb.active{ border-color:#FF6B5B; transform:scale(1.05) }
+#filterSheet{ transform:translateY(100%); transition:transform .5s cubic-bezier(.22,1,.36,1) } #filterSheet.open{ transform:translateY(0) }
+#mobileMenu{ clip-path:circle(0% at calc(100% - 48px) 48px); transition:clip-path .8s cubic-bezier(.22,1,.36,1) } #mobileMenu.open{ clip-path:circle(150% at calc(100% - 48px) 48px) }
+.char-reveal span{ display:inline-block; opacity:0; transform:translateY(24px) rotate(2deg); animation:charIn .8s cubic-bezier(.22,1,.36,1) forwards } @keyframes charIn{ to{ opacity:1; transform:none } }
+.dot{ width:8px; height:8px; border-radius:99px; background:rgba(255,255,255,.4); transition:all .4s; cursor:pointer } .dot.active{ width:28px; background:white }
+input,select,textarea{ outline:none } input:focus,select:focus,textarea:focus{ border-color:#E99A3C !important; box-shadow:0 0 0 3px rgba(233,154,60,.15) }
+.parallax-bg{ will-change:transform } .lightbox{ backdrop-filter:blur(12px) }
+.highlight-ring{ background:conic-gradient(from 180deg,#FF6B5B,#E99A3C,#FFD8BE,#FF6B5B); padding:3px; border-radius:9999px }
+/* TIMELINE */
+.timeline-track{ position:absolute; left:50%; top:0; bottom:0; width:2px; background:rgba(33,29,26,.08); transform:translateX(-50%) }
+@media(max-width:767px){ .timeline-track{ left:20px; transform:none } }
+#timelineFill{ position:absolute; top:0; left:0; width:100%; height:0%; background:linear-gradient(180deg,#E99A3C,#FF6B5B); border-radius:99px; box-shadow:0 0 12px rgba(255,107,91,.5) }
+/* horizontal showcase */
+#cinematicRow{ will-change:transform } #cinematicRow.grabbing{ cursor:grabbing !important }
+.cine-card{ transition:transform .7s cubic-bezier(.22,1,.36,1) } .cine-card:hover{ transform:translateY(-6px) scale(1.01) }
+/* big section numbers */
+.sec-num{ font-family:'Playfair Display',serif; font-size:clamp(70px,10vw,140px); line-height:1; color:transparent; -webkit-text-stroke:1px rgba(217,108,71,.25); user-select:none }
+/* skew on fast scroll */
+.skew-on-scroll{ transition:transform .3s ease-out }
+/* scroll-triggered zoom images */
+.zoom-scroll{ overflow:hidden } .zoom-scroll img{ transform:scale(1.15); transition:transform 1.4s cubic-bezier(.22,1,.36,1) } .zoom-scroll.visible img{ transform:scale(1) }
+@media (prefers-reduced-motion: reduce){ *{ animation-duration:.01ms !important; transition-duration:.01ms !important } html{ scroll-behavior:auto } }
+</style>
+</head>
+<body class="antialiased">
+
+<div id="scrollProgress"></div>
+
+<div id="loader">
+<div class="loader-ring"><span class="font-serif text-3xl text-[#E9B86E]">MN</span></div>
+<p class="mt-6 text-[#E9B86E] tracking-[0.4em] text-xs uppercase">MN Realtor Goa</p>
+<p class="mt-2 text-white/50 text-sm font-light">Goan &nbsp;|&nbsp; Dependable</p>
+<div class="loader-bar"><span></span></div>
+</div>
+
+<div id="sideDots" aria-hidden="true"></div>
+
+<div class="bg-charcoal text-white/90 text-[12px] md:text-[13px] py-2 px-4 relative z-[60]">
+<div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+<div class="flex items-center gap-2 truncate"><i data-lucide="badge-check" class="w-4 h-4 text-gold shrink-0"></i><span class="truncate tracking-wide">Goan | Dependable &nbsp;•&nbsp; Verified & TCP Approved Plots &nbsp;•&nbsp; 3Cr+ Portfolio</span></div>
+<div class="hidden md:flex items-center gap-5">
+<a href="https://instagram.com/modina.mnrealtor" target="_blank" class="flex items-center gap-1.5 hover:text-peach transition"><i data-lucide="instagram" class="w-4 h-4"></i> @modina.mnrealtor</a>
+<a href="https://wa.me/917045431681" target="_blank" class="flex items-center gap-1.5 hover:text-peach transition"><i data-lucide="phone" class="w-4 h-4"></i> +91 70454 31681</a>
+</div></div></div>
+
+<header id="navbar" class="sticky top-0 z-[55]">
+<nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+<a href="#/" data-route="home" class="flex items-center gap-3 group">
+<div class="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center relative overflow-hidden shadow-warm group-hover:scale-105 transition duration-500 border border-gold/30">
+<div class="absolute inset-0 bg-gradient-to-br from-amberlux/30 to-coral/30"></div>
+<span class="font-serif text-xl text-gold relative font-bold">MN</span>
+<div class="absolute bottom-1 w-6 h-[2px] bg-gradient-to-r from-gold to-coral rounded-full"></div>
+</div>
+<div class="leading-tight"><p class="brand-text font-serif font-bold text-lg md:text-xl text-white transition-colors" id="brandTitle">MN Realtor Goa</p><p class="text-[10px] md:text-[11px] tracking-[0.3em] uppercase text-amberlux font-medium">Goan | Dependable</p></div>
+</a>
+<div class="hidden lg:flex items-center gap-7 text-[14px] font-medium">
+<a href="#/properties" data-route="properties" class="nav-link text-white/90 hover:text-white">Properties</a>
+<a href="#" data-scroll="locations" class="nav-link text-white/90 hover:text-white">Goa Locations</a>
+<a href="#" data-scroll="villas" class="nav-link text-white/90 hover:text-white">Luxury Villas</a>
+<a href="#" data-scroll="plots" class="nav-link text-white/90 hover:text-white">Land</a>
+<a href="#" data-scroll="heritage" class="nav-link text-white/90 hover:text-white">Heritage Homes</a>
+<a href="#" data-scroll="about" class="nav-link text-white/90 hover:text-white">About</a>
+<a href="#" data-scroll="contact" class="nav-link text-white/90 hover:text-white">Contact</a>
+</div>
+<div class="hidden lg:flex items-center gap-3">
+<a href="https://wa.me/917045431681?text=Hi%20Modinaa%2C%20I%27m%20exploring%20properties%20in%20Goa.%20Please%20share%20details." target="_blank" class="nav-cta-outline flex items-center gap-2 px-4 py-2.5 rounded-full border border-white/30 text-white text-sm font-medium hover:bg-white hover:text-charcoal transition-all"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp</a>
+<a href="#" data-scroll="contact" class="btn-shine flex items-center gap-2 px-5 py-2.5 rounded-full gradient-warm text-white text-sm font-semibold shadow-warm hover:scale-[1.03] transition">Enquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+</div>
+<button id="hamburger" class="lg:hidden w-11 h-11 rounded-full glass flex items-center justify-center text-charcoal shadow-card" aria-label="Menu"><i data-lucide="menu" class="w-6 h-6" id="menuIcon"></i></button>
+</nav>
+</header>
+
+<div id="mobileMenu" class="fixed inset-0 z-[70] bg-gradient-to-br from-charcoal via-[#2E2620] to-[#4A2E26] text-white flex flex-col">
+<div class="flex items-center justify-between p-5">
+<div class="flex items-center gap-3"><div class="w-11 h-11 rounded-full bg-white/10 border border-gold/40 flex items-center justify-center"><span class="font-serif text-lg text-gold font-bold">MN</span></div><div><p class="font-serif font-bold">MN Realtor Goa</p><p class="text-[10px] tracking-[0.3em] text-gold uppercase">Goan | Dependable</p></div></div>
+<button id="closeMenu" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center"><i data-lucide="x" class="w-6 h-6"></i></button>
+</div>
+<div class="flex-1 overflow-y-auto px-8 py-4 space-y-1 text-lg">
+<a href="#/properties" data-route="properties" class="mob-link flex items-center justify-between py-3 border-b border-white/10">Properties <i data-lucide="chevron-right" class="w-5 h-5 text-gold"></i></a>
+<a href="#" data-scroll="locations" class="mob-link flex items-center justify-between py-3 border-b border-white/10">Goa Locations <i data-lucide="chevron-right" class="w-5 h-5 text-gold"></i></a>
+<a href="#" data-scroll="villas" class="mob-link flex items-center justify-between py-3 border-b border-white/10">Luxury Villas <i data-lucide="chevron-right" class="w-5 h-5 text-gold"></i></a>
+<a href="#" data-scroll="plots" class="mob-link flex items-center justify-between py-3 border-b border-white/10">Land & Plots <i data-lucide="chevron-right" class="w-5 h-5 text-gold"></i></a>
+<a href="#" data-scroll="heritage" class="mob-link flex items-center justify-between py-3 border-b border-white/10">Heritage Homes <i data-lucide="chevron-right" class="w-5 h-5 text-gold"></i></a>
+<a href="#" data-scroll="about" class="mob-link flex items-center justify-between py-3 border-b border-white/10">About Modinaa <i data-lucide="chevron-right" class="w-5 h-5 text-gold"></i></a>
+<a href="#" data-scroll="contact" class="mob-link flex items-center justify-between py-3 border-b border-white/10">Contact <i data-lucide="chevron-right" class="w-5 h-5 text-gold"></i></a>
+<div class="pt-6 grid grid-cols-2 gap-3">
+<a href="https://wa.me/917045431681" target="_blank" class="flex items-center justify-center gap-2 bg-[#25D366] rounded-full py-3.5 font-semibold text-[15px]"><i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp</a>
+<a href="tel:+917045431681" class="flex items-center justify-center gap-2 bg-white/10 border border-white/20 rounded-full py-3.5 font-semibold text-[15px]"><i data-lucide="phone" class="w-5 h-5"></i> Call Now</a>
+</div>
+<a href="https://instagram.com/modina.mnrealtor" target="_blank" class="flex items-center justify-center gap-2 pt-5 text-gold text-sm"><i data-lucide="instagram" class="w-4 h-4"></i> @modina.mnrealtor • 1,639 followers</a>
+</div>
+</div>
+
+<main>
+<div id="page-home" class="page-view active">
+
+<section id="hero" class="relative min-h-[108vh] -mt-[76px] flex flex-col justify-end overflow-hidden bg-charcoal">
+<div class="absolute inset-0 hero-bg-wrap">
+<div class="hero-slide active"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1800&q=80&auto=format&fit=crop" alt="Luxury villa Goa" class="w-full h-full object-cover kenburns"><div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-charcoal/30"></div><div class="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-transparent to-transparent"></div></div>
+<div class="hero-slide"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1800&q=80&auto=format&fit=crop" alt="Private villa pool" class="w-full h-full object-cover kenburns"><div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-charcoal/30"></div><div class="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-transparent to-transparent"></div></div>
+<div class="hero-slide"><img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1800&q=80&auto=format&fit=crop" alt="Goa coastal palms" class="w-full h-full object-cover kenburns"><div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-charcoal/30"></div><div class="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-transparent to-transparent"></div></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#211D1A] via-transparent to-transparent"></div>
+<div class="blob w-[500px] h-[500px] bg-coral/30 -left-40 top-1/3" data-parallax="-18"></div>
+<div class="blob w-[400px] h-[400px] bg-amberlux/25 right-0 bottom-0" data-parallax="14"></div>
+</div>
+
+<div class="relative z-10 max-w-7xl mx-auto px-5 md:px-8 w-full pt-36 pb-6" id="heroContent">
+<div class="flex flex-wrap items-center gap-2 mb-5">
+<span class="glass-dark text-peach text-[12px] px-4 py-1.5 rounded-full border border-white/15 flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Verified & TCP Approved Plots</span>
+<span class="glass-dark text-peach text-[12px] px-4 py-1.5 rounded-full border border-white/15 flex items-center gap-1.5"><i data-lucide="crown" class="w-3.5 h-3.5"></i> 3Cr+ Private Portfolio</span>
+<span class="hidden sm:flex glass-dark text-peach text-[12px] px-4 py-1.5 rounded-full border border-white/15 items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> North Goa Specialist</span>
+</div>
+<h1 id="heroTitle" class="font-serif text-white text-[42px] leading-[1.05] sm:text-6xl lg:text-[84px] font-medium max-w-4xl">Find Exceptional <em class="italic text-gradient font-semibold">Properties</em> in Goa</h1>
+<p class="mt-5 text-white/75 text-base md:text-xl font-light max-w-2xl">Verified plots, private luxury villas and distinctive Goan heritage homes — personally guided by Modinaa.</p>
+<div class="mt-6 flex flex-wrap items-center gap-5">
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3">
+<img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=100&q=60&auto=format&fit=crop" class="w-10 h-10 rounded-full border-2 border-white object-cover" alt="villa">
+<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=100&q=60&auto=format&fit=crop" class="w-10 h-10 rounded-full border-2 border-white object-cover" alt="home">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=100&q=60&auto=format&fit=crop" class="w-10 h-10 rounded-full border-2 border-white object-cover" alt="plot">
+<div class="w-10 h-10 rounded-full border-2 border-white gradient-warm flex items-center justify-center text-white text-xs font-bold">3Cr+</div>
+</div>
+<p class="text-white/70 text-sm">Boutique advisory trusted by <span class="text-white font-semibold">1,639+ Instagram community</span></p>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-5">
+<div class="flex gap-2" id="heroDots"><div class="dot active"></div><div class="dot"></div><div class="dot"></div></div>
+<div class="hidden md:flex items-center gap-3 text-white/60 text-xs tracking-[0.2em] uppercase"><div class="mouse"><span></span></div> Scroll to explore <div class="scroll-hint-line"></div></div>
+</div>
+
+<div class="mt-8 glass rounded-[24px] p-4 md:p-6 shadow-glow border border-white/60">
+<div class="flex items-center justify-between mb-4 px-1">
+<p class="font-serif text-lg md:text-xl font-semibold flex items-center gap-2"><span class="w-8 h-8 rounded-full gradient-warm flex items-center justify-center text-white"><i data-lucide="search" class="w-4 h-4"></i></span> Premium Property Search</p>
+<span class="hidden md:flex text-xs text-stonewarm items-center gap-1"><i data-lucide="lock" class="w-3.5 h-3.5"></i> Private & confidential enquiry</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-3">
+<div><label class="text-[11px] uppercase tracking-wider text-stonewarm font-semibold">Location</label><select id="s-location" class="mt-1 w-full bg-white border border-peach/60 rounded-xl px-3 py-3 text-sm font-medium"><option value="">All Goa</option></select></div>
+<div><label class="text-[11px] uppercase tracking-wider text-stonewarm font-semibold">Property Type</label><select id="s-type" class="mt-1 w-full bg-white border border-peach/60 rounded-xl px-3 py-3 text-sm font-medium"><option value="">All Types</option><option>Private Luxury Villa</option><option>Verified Plot</option><option>Goan Heritage House</option><option>Residential Property</option><option>Land / Investment</option></select></div>
+<div><label class="text-[11px] uppercase tracking-wider text-stonewarm font-semibold">Buy / Sell</label><select id="s-txn" class="mt-1 w-full bg-white border border-peach/60 rounded-xl px-3 py-3 text-sm font-medium"><option value="Buy">Buy</option><option value="Sell">Sell</option><option value="Rent">Lease / Rent</option></select></div>
+<div><label class="text-[11px] uppercase tracking-wider text-stonewarm font-semibold">Budget</label><select id="s-budget" class="mt-1 w-full bg-white border border-peach/60 rounded-xl px-3 py-3 text-sm font-medium"><option value="">Any Budget</option><option>Under 1 Cr</option><option>1 – 2 Cr</option><option>2 – 3 Cr</option><option>3Cr+</option></select></div>
+<div><label class="text-[11px] uppercase tracking-wider text-stonewarm font-semibold">Bedrooms</label><select id="s-beds" class="mt-1 w-full bg-white border border-peach/60 rounded-xl px-3 py-3 text-sm font-medium"><option value="">Any</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+<div><label class="text-[11px] uppercase tracking-wider text-stonewarm font-semibold">Status</label><select id="s-status" class="mt-1 w-full bg-white border border-peach/60 rounded-xl px-3 py-3 text-sm font-medium"><option value="">Any Status</option><option>Ready</option><option>Under Construction</option><option>Plot / Land</option><option>Heritage</option></select></div>
+<div class="flex items-end col-span-2 md:col-span-1"><button onclick="doHeroSearch()" class="btn-shine w-full gradient-warm text-white rounded-xl py-3 font-semibold flex items-center justify-center gap-2 hover:scale-[1.02] transition shadow-warm"><i data-lucide="search" class="w-4 h-4"></i> Search</button></div>
+</div>
+</div>
+
+<div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3 pb-8">
+<div class="glass-dark rounded-2xl p-4 border border-white/10 text-center"><p class="font-serif text-2xl text-white font-bold"><span class="counter" data-target="1639">0</span>+</p><p class="text-white/60 text-xs tracking-wide uppercase mt-1">Instagram Family</p></div>
+<div class="glass-dark rounded-2xl p-4 border border-white/10 text-center"><p class="font-serif text-2xl text-white font-bold"><span class="counter" data-target="87">0</span></p><p class="text-white/60 text-xs tracking-wide uppercase mt-1">Curated Posts</p></div>
+<div class="glass-dark rounded-2xl p-4 border border-white/10 text-center"><p class="font-serif text-2xl text-white font-bold"><span class="counter" data-target="7">0</span>+</p><p class="text-white/60 text-xs tracking-wide uppercase mt-1">Goa Micro-markets</p></div>
+<div class="glass-dark rounded-2xl p-4 border border-white/10 text-center"><p class="font-serif text-2xl text-gold font-bold">TCP</p><p class="text-white/60 text-xs tracking-wide uppercase mt-1">Verified Focus</p></div>
+</div>
+</div>
+</section>
+
+<div class="bg-gradient-to-r from-charcoal via-[#3A2A24] to-charcoal py-3.5 overflow-hidden border-y border-gold/20 relative z-10"><div class="marquee-track gap-10 text-[13px] tracking-[0.25em] uppercase text-peach/90 font-medium" id="marquee"></div></div>
+
+<section id="featured" data-nav="Featured" class="max-w-7xl mx-auto px-5 md:px-8 pt-20 pb-8 scroll-mt-24">
+<div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div><p class="flex items-center gap-2 text-terracotta text-xs font-bold tracking-[0.3em] uppercase"><span class="w-8 h-[2px] bg-gradient-to-r from-amberlux to-coral rounded-full grow-line"></span> Handpicked For You</p>
+<h2 class="font-serif text-4xl md:text-5xl mt-3">Featured <em class="italic text-gradient">Properties</em></h2>
+<p class="text-stonewarm mt-3 max-w-xl">A boutique showcase across North Goa's most loved villages. Exact price & availability shared privately on enquiry.</p></div>
+<div class="flex gap-2">
+<button onclick="scrollHoriz('featuredRow',-1)" class="w-12 h-12 rounded-full border border-peach bg-white flex items-center justify-center hover:bg-charcoal hover:text-white transition"><i data-lucide="arrow-left" class="w-5 h-5"></i></button>
+<button onclick="scrollHoriz('featuredRow',1)" class="w-12 h-12 rounded-full border border-peach bg-white flex items-center justify-center hover:bg-charcoal hover:text-white transition"><i data-lucide="arrow-right" class="w-5 h-5"></i></button>
+<button onclick="navigate('properties')" class="hidden sm:flex items-center gap-2 px-6 h-12 rounded-full bg-charcoal text-white text-sm font-semibold hover:bg-terracotta transition">View All <i data-lucide="arrow-up-right" class="w-4 h-4"></i></button>
+</div></div>
+<div id="featuredRow" class="flex gap-5 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-4 -mx-5 px-5 md:mx-0 md:px-0"></div>
+<p class="text-center text-xs text-stonewarm mt-2 tracking-wide flex items-center justify-center gap-2"><i data-lucide="move-horizontal" class="w-4 h-4"></i> Scroll sideways to wander — the row gently follows your scroll</p>
+</section>
+
+<section id="categories" class="max-w-7xl mx-auto px-5 md:px-8 py-14 scroll-mt-24">
+<div class="reveal text-center max-w-2xl mx-auto mb-10"><p class="text-terracotta text-xs font-bold tracking-[0.3em] uppercase">Property Categories</p><h2 class="font-serif text-4xl md:text-5xl mt-3">Explore By <em class="italic text-gradient">Lifestyle</em></h2><p class="text-stonewarm mt-3">Five signature collections curated by Modinaa for living, legacy and land banking.</p></div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 stagger" id="categoryGrid"></div>
+</section>
+
+<section id="locations" data-nav="Locations" class="relative py-20 bg-gradient-to-b from-sand via-blush/60 to-cream overflow-hidden scroll-mt-20">
+<div class="blob w-[450px] h-[450px] bg-peach/70 left-[-150px] top-10" data-parallax="-12"></div>
+<div class="blob w-[400px] h-[400px] bg-coral/20 right-[-120px] bottom-0" data-parallax="12"></div>
+<div class="sec-num absolute top-8 right-6 md:right-12 opacity-60">01</div>
+<div class="max-w-7xl mx-auto px-5 md:px-8 relative">
+<div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+<div><p class="flex items-center gap-2 text-terracotta text-xs font-bold tracking-[0.3em] uppercase"><span class="w-8 h-[2px] bg-gradient-to-r from-amberlux to-coral rounded-full"></span> Instagram Highlights</p>
+<h2 class="font-serif text-4xl md:text-5xl mt-3">Explore <em class="italic text-gradient">Goa Locations</em></h2>
+<p class="text-stonewarm mt-3 max-w-xl">The villages Modinaa walks every week — from Portuguese quarters to palm-fringed hinterlands.</p></div>
+<button onclick="navigate('properties')" class="flex items-center gap-2 text-sm font-semibold text-terracotta hover:gap-3 transition-all">Browse all properties <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 stagger" id="locationGrid"></div>
+</div>
+</section>
+
+<section id="villas" data-nav="Villas" class="max-w-7xl mx-auto px-5 md:px-8 py-20 scroll-mt-24">
+<div class="grid lg:grid-cols-2 gap-10 items-center">
+<div class="reveal-left relative">
+<div class="img-reveal zoom-scroll rounded-[24px] overflow-hidden shadow-warm"><img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80&auto=format&fit=crop" alt="Private luxury villa night" class="w-full h-[520px] object-cover" loading="lazy"></div>
+<div class="absolute -bottom-6 -right-2 md:right-8 glass rounded-2xl p-5 shadow-card max-w-[260px] float-soft border border-peach"><div class="flex items-center gap-2 text-golddeep"><i data-lucide="crown" class="w-5 h-5"></i><p class="text-xs font-bold tracking-widest uppercase">Private Collection</p></div><p class="font-serif text-2xl mt-2">3Cr+ Villas</p><p class="text-sm text-stonewarm mt-1">Gated, private pools & full privacy. Details on enquiry.</p></div>
+<div class="absolute top-5 left-5 glass-dark text-white text-xs px-4 py-2 rounded-full flex items-center gap-2"><span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span> Siolim • Saligao • Parra • Moira</div>
+</div>
+<div class="reveal-right">
+<div class="sec-num">02</div>
+<p class="text-terracotta text-xs font-bold tracking-[0.3em] uppercase">Luxury Villas Showcase</p>
+<h2 class="font-serif text-4xl md:text-[52px] leading-tight mt-3">Private Luxury <em class="italic text-gradient">Villas</em> For Quiet Indulgence</h2>
+<p class="text-stonewarm mt-4 leading-relaxed">Think laterite walls softened by monsoon greens, private decks over paddy views, and evenings lit in amber. Modinaa previews each villa personally before it reaches you.</p>
+<div class="mt-6 grid grid-cols-2 gap-4">
+<div class="bg-white border border-peach/60 rounded-2xl p-4 hover:-translate-y-1 transition"><i data-lucide="waves" class="w-6 h-6 text-terracotta"></i><p class="font-semibold mt-2 text-sm">Private Pool & Deck</p><p class="text-xs text-stonewarm mt-1">Showcase feature, varies by villa</p></div>
+<div class="bg-white border border-peach/60 rounded-2xl p-4 hover:-translate-y-1 transition"><i data-lucide="shield-check" class="w-6 h-6 text-terracotta"></i><p class="font-semibold mt-2 text-sm">Gated & Secure</p><p class="text-xs text-stonewarm mt-1">Privacy-first communities</p></div>
+<div class="bg-white border border-peach/60 rounded-2xl p-4 hover:-translate-y-1 transition"><i data-lucide="trees" class="w-6 h-6 text-terracotta"></i><p class="font-semibold mt-2 text-sm">Green Surrounds</p><p class="text-xs text-stonewarm mt-1">Palms, fields & heritage lanes</p></div>
+<div class="bg-white border border-peach/60 rounded-2xl p-4 hover:-translate-y-1 transition"><i data-lucide="key-round" class="w-6 h-6 text-terracotta"></i><p class="font-semibold mt-2 text-sm">Move-in Options</p><p class="text-xs text-stonewarm mt-1">Status shared on enquiry</p></div>
+</div>
+<div class="mt-7 flex flex-wrap gap-3">
+<button onclick="filterAndGo('Private Luxury Villa')" class="btn-shine gradient-warm text-white px-7 py-3.5 rounded-full font-semibold flex items-center gap-2 shadow-warm">Explore Villas <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+<a href="https://wa.me/917045431681?text=Hi%20Modinaa%2C%20I%27m%20interested%20in%20Private%20Luxury%20Villas%20in%20Goa." target="_blank" class="flex items-center gap-2 px-7 py-3.5 rounded-full border border-charcoal/15 bg-white font-semibold hover:bg-charcoal hover:text-white transition"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Enquiry</a>
+</div></div></div>
+<div id="villaStrip" class="mt-16 flex gap-5 overflow-x-auto no-scrollbar snap-x pb-2"></div>
+</section>
+
+<section id="plots" data-nav="Plots" class="relative py-20 bg-charcoal text-white overflow-hidden scroll-mt-20">
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1800&q=70&auto=format&fit=crop" class="absolute inset-0 w-full h-[120%] object-cover opacity-20 parallax-bg" alt="Goa land" loading="lazy">
+<div class="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal/90 to-[#4A2E26]/90"></div>
+<div class="max-w-7xl mx-auto px-5 md:px-8 relative grid lg:grid-cols-2 gap-12 items-center">
+<div class="reveal-left">
+<div class="sec-num !text-transparent" style="-webkit-text-stroke:1px rgba(233,184,110,.3)">03</div>
+<p class="text-gold text-xs font-bold tracking-[0.3em] uppercase flex items-center gap-2"><i data-lucide="badge-check" class="w-4 h-4"></i> Verified & TCP Approved Plots</p>
+<h2 class="font-serif text-4xl md:text-[52px] leading-tight mt-4">Own Land in Goa, <em class="italic text-gradient">The Right Way</em></h2>
+<p class="text-white/70 mt-4 leading-relaxed">Clear titles, proper access and TCP documentation matter more than anything in Goa. Modinaa focuses on verified plots so you can build with confidence.</p>
+<div class="mt-7 space-y-4">
+<div class="flex gap-4 glass-dark border border-white/10 rounded-2xl p-4 hover:border-gold/40 transition"><span class="w-11 h-11 rounded-full gradient-warm flex items-center justify-center shrink-0"><i data-lucide="file-check" class="w-5 h-5"></i></span><div><p class="font-semibold">Documentation-First Approach</p><p class="text-sm text-white/60 mt-1">TCP papers discussed transparently before site visits.</p></div></div>
+<div class="flex gap-4 glass-dark border border-white/10 rounded-2xl p-4 hover:border-gold/40 transition"><span class="w-11 h-11 rounded-full gradient-warm flex items-center justify-center shrink-0"><i data-lucide="map" class="w-5 h-5"></i></span><div><p class="font-semibold">Tivim • Colvale • Verla • Guirim Belt</p><p class="text-sm text-white/60 mt-1">High-demand North Goa growth corridors with village charm intact.</p></div></div>
+<div class="flex gap-4 glass-dark border border-white/10 rounded-2xl p-4 hover:border-gold/40 transition"><span class="w-11 h-11 rounded-full gradient-warm flex items-center justify-center shrink-0"><i data-lucide="sprout" class="w-5 h-5"></i></span><div><p class="font-semibold">Build / Hold / Legacy</p><p class="text-sm text-white/60 mt-1">For dream homes and long-term land holdings alike.</p></div></div>
+</div>
+<div class="mt-7 flex flex-wrap gap-3">
+<button onclick="filterAndGo('Verified Plot')" class="btn-shine bg-white text-charcoal px-7 py-3.5 rounded-full font-semibold hover:bg-peach transition flex items-center gap-2">View Verified Plots <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+<a href="https://wa.me/917045431681?text=Hi%20Modinaa%2C%20please%20share%20your%20current%20Verified%20plots." target="_blank" class="flex items-center gap-2 px-7 py-3.5 rounded-full border border-white/25 font-semibold hover:bg-white/10 transition"><i data-lucide="message-circle" class="w-4 h-4"></i> Ask on WhatsApp</a>
+</div></div>
+<div class="reveal-right grid grid-cols-2 gap-4">
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=75&auto=format&fit=crop" class="rounded-2xl h-64 w-full object-cover border border-white/10" alt="plot" loading="lazy">
+<img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=75&auto=format&fit=crop" class="rounded-2xl h-64 w-full object-cover mt-8 border border-white/10" alt="farmland" loading="lazy">
+<img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&q=75&auto=format&fit=crop" class="rounded-2xl h-64 w-full object-cover -mt-8 border border-white/10" alt="green land" loading="lazy">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=75&auto=format&fit=crop" class="rounded-2xl h-64 w-full object-cover border border-white/10" alt="goa landscape" loading="lazy">
+</div></div>
+</section>
+
+<section id="heritage" data-nav="Heritage" class="max-w-7xl mx-auto px-5 md:px-8 py-20 scroll-mt-24">
+<div class="grid lg:grid-cols-2 gap-10 items-center">
+<div class="reveal-left order-2 lg:order-1">
+<div class="sec-num">04</div>
+<p class="text-terracotta text-xs font-bold tracking-[0.3em] uppercase">Goan Heritage Houses</p>
+<h2 class="font-serif text-4xl md:text-[52px] leading-tight mt-3">Portuguese Souls, <em class="italic text-gradient">Restored Stories</em></h2>
+<p class="text-stonewarm mt-4 leading-relaxed">Oyster-shell windows, carved rosewood, balcãos wrapped in bougainvillea. Heritage homes in Moira, Aldona, Parra and Saligao are rare — Modinaa helps you find them quietly and correctly.</p>
+<ul class="mt-6 space-y-3 text-[15px]">
+<li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span> Portuguese-era architecture & village settings</li>
+<li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span> Restoration-ready & restored options discussed privately</li>
+<li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span> Title & structure clarity before commitment</li>
+</ul>
+<div class="mt-7 flex flex-wrap gap-3"><button onclick="filterAndGo('Goan Heritage House')" class="btn-shine gradient-warm text-white px-7 py-3.5 rounded-full font-semibold shadow-warm flex items-center gap-2">Discover Heritage <i data-lucide="arrow-right" class="w-4 h-4"></i></button></div>
+</div>
+<div class="reveal-right order-1 lg:order-2 relative">
+<div class="img-reveal zoom-scroll rounded-[24px] overflow-hidden shadow-card"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80&auto=format&fit=crop" alt="Goan heritage house" class="w-full h-[520px] object-cover" loading="lazy"></div>
+<div class="absolute top-5 right-5 glass rounded-2xl px-5 py-3 border border-peach flex items-center gap-3"><i data-lucide="landmark" class="w-6 h-6 text-terracotta"></i><div><p class="font-serif font-bold leading-none">Heritage</p><p class="text-xs text-stonewarm mt-1">Moira • Aldona • Parra</p></div></div>
+</div></div>
+</section>
+
+<section id="why" class="py-20 bg-gradient-to-b from-cream to-sand relative overflow-hidden">
+<div class="blob w-[400px] h-[400px] bg-peach/50 right-[-100px] top-10" data-parallax="10"></div>
+<div class="max-w-7xl mx-auto px-5 md:px-8 relative">
+<div class="reveal text-center max-w-2xl mx-auto mb-12"><p class="text-terracotta text-xs font-bold tracking-[0.3em] uppercase">Why Choose MN Realtor Goa</p><h2 class="font-serif text-4xl md:text-5xl mt-3">Boutique, <em class="italic text-gradient">Dependable</em> & Goan At Heart</h2></div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 stagger">
+<div class="bg-white rounded-[22px] p-7 border border-peach/50 shadow-card hover:-translate-y-2 transition duration-500"><span class="w-12 h-12 rounded-2xl gradient-warm text-white flex items-center justify-center"><i data-lucide="heart-handshake" class="w-6 h-6"></i></span><h3 class="font-serif text-xl mt-4 font-semibold">Goan | Dependable</h3><p class="text-sm text-stonewarm mt-2 leading-relaxed">One advisor, end-to-end. Modinaa answers personally — no call centres, no pressure.</p></div>
+<div class="bg-white rounded-[22px] p-7 border border-peach/50 shadow-card hover:-translate-y-2 transition duration-500"><span class="w-12 h-12 rounded-2xl gradient-warm text-white flex items-center justify-center"><i data-lucide="shield-check" class="w-6 h-6"></i></span><h3 class="font-serif text-xl mt-4 font-semibold">Verification Focus</h3><p class="text-sm text-stonewarm mt-2 leading-relaxed">TCP & documentation discussed upfront. What isn't verified isn't promised.</p></div>
+<div class="bg-white rounded-[22px] p-7 border border-peach/50 shadow-card hover:-translate-y-2 transition duration-500"><span class="w-12 h-12 rounded-2xl gradient-warm text-white flex items-center justify-center"><i data-lucide="gem" class="w-6 h-6"></i></span><h3 class="font-serif text-xl mt-4 font-semibold">3Cr+ Curation</h3><p class="text-sm text-stonewarm mt-2 leading-relaxed">A private, high-end portfolio across villas, heritage & prime land.</p></div>
+<div class="bg-white rounded-[22px] p-7 border border-peach/50 shadow-card hover:-translate-y-2 transition duration-500"><span class="w-12 h-12 rounded-2xl gradient-warm text-white flex items-center justify-center"><i data-lucide="map-pinned" class="w-6 h-6"></i></span><h3 class="font-serif text-xl mt-4 font-semibold">Village Expertise</h3><p class="text-sm text-stonewarm mt-2 leading-relaxed">Siolim to Saligao, Parra to Aldona — lived local knowledge, not listings alone.</p></div>
+</div></div>
+</section>
+
+<section id="about" data-nav="About" class="max-w-7xl mx-auto px-5 md:px-8 py-20 scroll-mt-24">
+<div class="bg-white rounded-[32px] border border-peach/50 shadow-card overflow-hidden grid lg:grid-cols-5">
+<div class="lg:col-span-2 relative min-h-[420px] overflow-hidden">
+<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80&auto=format&fit=crop" alt="Modinaa – MN Realtor Goa" class="absolute inset-0 w-full h-[115%] object-cover parallax-bg" loading="lazy">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 glass rounded-2xl p-4 flex items-center gap-4"><div class="highlight-ring shrink-0"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=70&auto=format&fit=crop" class="w-14 h-14 rounded-full object-cover border-2 border-white" alt="profile"></div><div class="flex-1"><p class="font-bold text-sm">modina.mnrealtor</p><p class="text-xs text-stonewarm">87 posts • 1,639 followers • 74 following</p></div><a href="https://instagram.com/modina.mnrealtor" target="_blank" class="text-xs font-bold gradient-warm text-white px-4 py-2 rounded-full">Follow</a></div>
+</div>
+<div class="lg:col-span-3 p-8 md:p-12">
+<p class="reveal text-terracotta text-xs font-bold tracking-[0.3em] uppercase">About Modinaa</p>
+<h2 class="reveal font-serif text-4xl md:text-5xl mt-3">The Face Behind <em class="italic text-gradient">MN Realtor Goa</em></h2>
+<p class="reveal mt-5 text-cocoa leading-relaxed">Hello, I'm <strong>Modinaa</strong> — a Goan realtor helping you find verified plots, private luxury villas and distinctive heritage homes across North Goa. My work is personal, patient and precise.</p>
+<p class="mt-4 text-stonewarm leading-relaxed">From first WhatsApp message to final site visit, you speak directly with me. I preview locations, clarify paperwork direction, and only show what genuinely fits your brief — whether it's a quiet villa in Saligao, a Portuguese home in Moira, or TCP-approved land in Tivim.</p>
+<div class="mt-6 flex flex-wrap gap-2"><span class="bg-blush border border-peach text-cocoa text-xs px-4 py-2 rounded-full font-medium">Goan | Dependable</span><span class="bg-blush border border-peach text-cocoa text-xs px-4 py-2 rounded-full font-medium">Verified & TCP Approved Plots</span><span class="bg-blush border border-peach text-cocoa text-xs px-4 py-2 rounded-full font-medium">Private Luxury Villas</span><span class="bg-blush border border-peach text-cocoa text-xs px-4 py-2 rounded-full font-medium">Goan Heritage Houses</span></div>
+<div class="mt-8 flex flex-wrap gap-3">
+<a href="https://wa.me/917045431681?text=Hi%20Modinaa%2C%20I%27d%20love%20an%20introduction%20call%20about%20buying%20in%20Goa." target="_blank" class="btn-shine gradient-warm text-white px-7 py-3.5 rounded-full font-semibold flex items-center gap-2 shadow-warm"><i data-lucide="message-circle" class="w-4 h-4"></i> Chat with Modinaa</a>
+<a href="https://instagram.com/modina.mnrealtor" target="_blank" class="flex items-center gap-2 px-7 py-3.5 rounded-full border border-charcoal/15 font-semibold hover:bg-charcoal hover:text-white transition"><i data-lucide="instagram" class="w-4 h-4"></i> Instagram</a>
+</div></div></div>
+</section>
+
+<section id="how" class="py-20 bg-gradient-to-b from-sand to-blush/50 relative overflow-hidden">
+<div class="max-w-6xl mx-auto px-5 md:px-8">
+<div class="reveal text-center mb-14"><p class="text-terracotta text-xs font-bold tracking-[0.3em] uppercase">How It Works</p><h2 class="font-serif text-4xl md:text-5xl mt-3">Simple, Private <em class="italic text-gradient">& Personal</em></h2><p class="text-stonewarm text-sm mt-3">Scroll — watch the journey line draw itself</p></div>
+<div class="relative" id="howWrap">
+<div class="timeline-track hidden md:block"><div id="timelineFill"></div></div>
+<div class="grid md:grid-cols-4 gap-5 stagger relative">
+<div class="relative bg-white rounded-[22px] p-6 border border-peach/50 text-center shadow-card"><span class="absolute -top-4 left-1/2 -translate-x-1/2 gradient-warm text-white text-xs font-bold w-8 h-8 rounded-full flex items-center justify-center shadow-warm">1</span><i data-lucide="message-circle" class="w-8 h-8 mx-auto text-terracotta mt-2"></i><h3 class="font-semibold mt-3">Say Hello on WhatsApp</h3><p class="text-sm text-stonewarm mt-2">Share your budget, village & dream — villas, plots or heritage.</p></div>
+<div class="relative bg-white rounded-[22px] p-6 border border-peach/50 text-center shadow-card"><span class="absolute -top-4 left-1/2 -translate-x-1/2 gradient-warm text-white text-xs font-bold w-8 h-8 rounded-full flex items-center justify-center shadow-warm">2</span><i data-lucide="layers" class="w-8 h-8 mx-auto text-terracotta mt-2"></i><h3 class="font-semibold mt-3">Curated Shortlist</h3><p class="text-sm text-stonewarm mt-2">Modinaa shares matching options with honest direction.</p></div>
+<div class="relative bg-white rounded-[22px] p-6 border border-peach/50 text-center shadow-card"><span class="absolute -top-4 left-1/2 -translate-x-1/2 gradient-warm text-white text-xs font-bold w-8 h-8 rounded-full flex items-center justify-center shadow-warm">3</span><i data-lucide="footprints" class="w-8 h-8 mx-auto text-terracotta mt-2"></i><h3 class="font-semibold mt-3">Private Site Visits</h3><p class="text-sm text-stonewarm mt-2">Walk the land, feel the village, ask everything.</p></div>
+<div class="relative bg-white rounded-[22px] p-6 border border-peach/50 text-center shadow-card"><span class="absolute -top-4 left-1/2 -translate-x-1/2 gradient-warm text-white text-xs font-bold w-8 h-8 rounded-full flex items-center justify-center shadow-warm">4</span><i data-lucide="key-round" class="w-8 h-8 mx-auto text-terracotta mt-2"></i><h3 class="font-semibold mt-3">Confident Decision</h3><p class="text-sm text-stonewarm mt-2">Clear next steps with documentation guidance.</p></div>
+</div></div></div>
+</section>
+
+<section id="showcase" data-nav="Showcase" class="relative bg-charcoal overflow-hidden scroll-mt-20">
+<div class="max-w-7xl mx-auto px-5 md:px-8 pt-20 pb-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+<div class="reveal"><p class="text-gold text-xs font-bold tracking-[0.3em] uppercase">Cinematic Property Showcase</p><h2 class="font-serif text-white text-4xl md:text-5xl mt-3">Goa, In Its <em class="italic text-gradient">Golden Hour</em></h2></div>
+<p class="text-white/60 max-w-md text-sm reveal">Keep scrolling — on desktop this gallery glides horizontally with your scroll. On mobile, drag to wander through villas, lanes, palms and paddy light.</p>
+</div>
+<div class="pb-6 flex items-center gap-3 px-5 md:px-8 max-w-7xl mx-auto"><div class="flex-1 h-[2px] bg-white/10 rounded-full overflow-hidden"><div id="cineProgress" class="h-full w-0 bg-gradient-to-r from-amberlux to-coral rounded-full"></div></div><span class="text-white/50 text-xs tracking-widest uppercase flex items-center gap-2"><i data-lucide="move-horizontal" class="w-4 h-4"></i> Scroll-driven</span></div>
+<div id="cinematicViewport" class="overflow-hidden">
+<div id="cinematicRow" class="flex gap-4 overflow-x-auto no-scrollbar px-5 md:px-8 pb-14 cursor-grab select-none" style="scroll-snap-type:x mandatory"></div>
+</div>
+</section>
+
+<section id="testimonials" class="max-w-5xl mx-auto px-5 md:px-8 py-20 text-center">
+<div class="reveal"><p class="text-terracotta text-xs font-bold tracking-[0.3em] uppercase">Client Love</p><h2 class="font-serif text-4xl md:text-5xl mt-3">Stories Told <em class="italic text-gradient">Privately</em></h2>
+<div class="mt-8 bg-white border border-peach/60 rounded-[28px] p-8 md:p-12 shadow-card relative overflow-hidden"><div class="blob w-72 h-72 bg-peach/60 -top-20 -right-20"></div><i data-lucide="quote" class="w-10 h-10 mx-auto text-gold"></i><p class="font-serif text-xl md:text-2xl mt-4 leading-relaxed text-cocoa">“We don't publish client reviews without permission. Most of our families prefer complete privacy — and we honour that.”</p><p class="text-sm text-stonewarm mt-4">— Modinaa, MN Realtor Goa</p><div class="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm"><span class="flex items-center gap-2 text-cocoa"><i data-lucide="instagram" class="w-4 h-4 text-terracotta"></i> 1,639 community</span><span class="flex items-center gap-2 text-cocoa"><i data-lucide="message-circle" class="w-4 h-4 text-terracotta"></i> DM references on request</span></div><a href="https://wa.me/917045431681?text=Hi%20Modinaa%2C%20could%20you%20share%20how%20you%20work%20with%20buyers%3F" target="_blank" class="btn-shine inline-flex mt-7 gradient-warm text-white px-8 py-3.5 rounded-full font-semibold shadow-warm">Ask For References <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a><p class="text-[11px] text-stonewarm mt-4 italic">No testimonials are invented. References shared privately with consent only.</p></div></div>
+</section>
+
+<section id="instagram" class="py-20 bg-gradient-to-b from-cream via-blush/40 to-sand">
+<div class="max-w-7xl mx-auto px-5 md:px-8">
+<div class="reveal bg-white rounded-[28px] border border-peach/50 shadow-card p-6 md:p-10">
+<div class="flex flex-col md:flex-row md:items-center gap-6">
+<div class="highlight-ring w-fit shrink-0"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=75&auto=format&fit=crop" class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-white" alt="instagram profile"></div>
+<div class="flex-1"><div class="flex flex-wrap items-center gap-3"><p class="font-bold text-lg">modina.mnrealtor</p><span class="text-[11px] bg-charcoal text-white px-3 py-1 rounded-full">Real Estate • Goa</span></div><div class="flex gap-6 mt-2 text-sm"><span><strong>87</strong> posts</span><span><strong>1,639</strong> followers</span><span><strong>74</strong> following</span></div><p class="text-sm text-cocoa mt-2">MN Realtor Goa • Goan | Dependable<br>Verified & TCP approved plots • Private Luxury Villas • Goan heritage houses • 3Cr+...</p></div>
+<div class="flex gap-3"><a href="https://instagram.com/modina.mnrealtor" target="_blank" class="gradient-warm text-white px-6 py-3 rounded-full text-sm font-semibold btn-shine">Follow</a><a href="https://wa.me/917045431681" target="_blank" class="border border-charcoal/15 px-6 py-3 rounded-full text-sm font-semibold hover:bg-charcoal hover:text-white transition">Message</a></div>
+</div>
+<div class="mt-8 flex gap-4 overflow-x-auto no-scrollbar pb-2" id="highlightsRow"></div>
+<div class="mt-6 grid grid-cols-2 md:grid-cols-3 gap-3" id="instaGrid"></div>
+</div></div>
+</section>
+
+<section id="faq" class="max-w-4xl mx-auto px-5 md:px-8 py-20">
+<div class="reveal text-center mb-10"><p class="text-terracotta text-xs font-bold tracking-[0.3em] uppercase">Good To Know</p><h2 class="font-serif text-4xl md:text-5xl mt-3">Frequently Asked <em class="italic text-gradient">Questions</em></h2></div>
+<div class="space-y-3" id="faqList"></div>
+</section>
+
+<section id="contact" data-nav="Contact" class="max-w-7xl mx-auto px-5 md:px-8 pb-20 scroll-mt-24">
+<div class="grid lg:grid-cols-2 gap-6">
+<div class="reveal-left bg-charcoal text-white rounded-[28px] p-8 md:p-12 relative overflow-hidden">
+<div class="blob w-80 h-80 bg-coral/25 -top-20 -right-20" data-parallax="12"></div>
+<p class="text-gold text-xs font-bold tracking-[0.3em] uppercase">Contact / Enquiry</p>
+<h2 class="font-serif text-4xl md:text-5xl mt-3 leading-tight">Let's Find Your <em class="italic text-gradient">Goa Home</em></h2>
+<p class="text-white/65 mt-4">Message Modinaa directly. Replies are personal — usually within a few hours.</p>
+<div class="mt-8 space-y-4">
+<a href="https://wa.me/917045431681" target="_blank" class="flex items-center gap-4 glass-dark border border-white/10 rounded-2xl p-4 hover:border-gold/50 transition"><span class="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center shrink-0"><i data-lucide="message-circle" class="w-6 h-6"></i></span><div><p class="text-xs text-white/50 uppercase tracking-widest">WhatsApp</p><p class="font-semibold">+91 70454 31681</p></div><i data-lucide="arrow-up-right" class="w-5 h-5 ml-auto text-gold"></i></a>
+<a href="tel:+917045431681" class="flex items-center gap-4 glass-dark border border-white/10 rounded-2xl p-4 hover:border-gold/50 transition"><span class="w-12 h-12 rounded-full gradient-warm flex items-center justify-center shrink-0"><i data-lucide="phone" class="w-6 h-6"></i></span><div><p class="text-xs text-white/50 uppercase tracking-widest">Call</p><p class="font-semibold">+91 70454 31681</p></div><i data-lucide="arrow-up-right" class="w-5 h-5 ml-auto text-gold"></i></a>
+<a href="https://instagram.com/modina.mnrealtor" target="_blank" class="flex items-center gap-4 glass-dark border border-white/10 rounded-2xl p-4 hover:border-gold/50 transition"><span class="w-12 h-12 rounded-full bg-gradient-to-br from-[#F58529] via-[#DD2A7B] to-[#8134AF] flex items-center justify-center shrink-0"><i data-lucide="instagram" class="w-6 h-6"></i></span><div><p class="text-xs text-white/50 uppercase tracking-widest">Instagram</p><p class="font-semibold">@modina.mnrealtor</p></div><i data-lucide="arrow-up-right" class="w-5 h-5 ml-auto text-gold"></i></a>
+</div>
+<p class="text-[11px] text-white/40 mt-6">Location: Goa, India • By appointment for site visits</p>
+</div>
+<div class="reveal-right bg-white rounded-[28px] border border-peach/60 shadow-card p-8 md:p-10">
+<h3 class="font-serif text-2xl font-semibold">Send An Enquiry</h3>
+<p class="text-sm text-stonewarm mt-1">This opens WhatsApp with your details pre-filled.</p>
+<form id="enquiryForm" class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div><label class="text-xs font-semibold uppercase tracking-wider text-stonewarm">Full Name *</label><input required id="e-name" placeholder="Your name" class="mt-1.5 w-full border border-peach/70 rounded-xl px-4 py-3 text-sm bg-cream"></div>
+<div><label class="text-xs font-semibold uppercase tracking-wider text-stonewarm">Phone *</label><input required id="e-phone" placeholder="+91 ..." class="mt-1.5 w-full border border-peach/70 rounded-xl px-4 py-3 text-sm bg-cream"></div>
+<div><label class="text-xs font-semibold uppercase tracking-wider text-stonewarm">I'm interested in</label><select id="e-interest" class="mt-1.5 w-full border border-peach/70 rounded-xl px-4 py-3 text-sm bg-cream"><option>Private Luxury Villa</option><option>Verified / TCP Plot</option><option>Goan Heritage House</option><option>Residential Property</option><option>Land / Investment</option><option>Selling my property</option></select></div>
+<div><label class="text-xs font-semibold uppercase tracking-wider text-stonewarm">Preferred Location</label><select id="e-loc" class="mt-1.5 w-full border border-peach/70 rounded-xl px-4 py-3 text-sm bg-cream"><option>Anywhere in North Goa</option><option>Siolim</option><option>Saligao</option><option>Parra</option><option>Moira & Aldona</option><option>Tivim / Colvale</option><option>Verla</option><option>Guirim / Sangolda</option></select></div>
+<div><label class="text-xs font-semibold uppercase tracking-wider text-stonewarm">Budget</label><select id="e-budget" class="mt-1.5 w-full border border-peach/70 rounded-xl px-4 py-3 text-sm bg-cream"><option>3Cr+</option><option>2 – 3 Cr</option><option>1 – 2 Cr</option><option>Under 1 Cr</option><option>To be discussed</option></select></div>
+<div><label class="text-xs font-semibold uppercase tracking-wider text-stonewarm">Timeline</label><select id="e-time" class="mt-1.5 w-full border border-peach/70 rounded-xl px-4 py-3 text-sm bg-cream"><option>Ready to visit soon</option><option>1 – 3 months</option><option>Just exploring</option></select></div>
+<div class="sm:col-span-2"><label class="text-xs font-semibold uppercase tracking-wider text-stonewarm">Message</label><textarea id="e-msg" rows="4" placeholder="Tell Modinaa about your dream property..." class="mt-1.5 w-full border border-peach/70 rounded-xl px-4 py-3 text-sm bg-cream resize-none"></textarea></div>
+<button type="submit" class="sm:col-span-2 btn-shine gradient-warm text-white rounded-xl py-4 font-semibold flex items-center justify-center gap-2 shadow-warm hover:scale-[1.01] transition"><i data-lucide="send" class="w-4 h-4"></i> Send via WhatsApp</button>
+<p class="sm:col-span-2 text-[11px] text-stonewarm text-center">By enquiring you agree to be contacted on WhatsApp/call. Details available on enquiry.</p>
+</form>
+</div></div>
+</section>
+</div>
+
+<div id="page-properties" class="page-view">
+<section class="relative -mt-[76px] pt-36 pb-10 bg-charcoal overflow-hidden">
+<img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1800&q=70&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-25 parallax-bg" alt="properties header">
+<div class="absolute inset-0 bg-gradient-to-b from-charcoal/60 to-charcoal"></div>
+<div class="relative max-w-7xl mx-auto px-5 md:px-8">
+<p class="text-gold text-xs font-bold tracking-[0.3em] uppercase">/properties</p>
+<h1 class="font-serif text-white text-4xl md:text-6xl mt-2">All <em class="italic text-gradient">Properties</em></h1>
+<p class="text-white/60 mt-3 max-w-xl">Filter this boutique portfolio. Price, exact specs & availability are shared privately — <span class="text-peach">Details available on enquiry.</span></p>
+<div class="mt-6 glass rounded-2xl p-3 flex flex-col md:flex-row gap-3">
+<div class="flex-1 flex items-center gap-2 bg-white rounded-xl px-4 py-3 border border-peach/60"><i data-lucide="search" class="w-4 h-4 text-stonewarm"></i><input id="f-search" placeholder="Search villa, plot, heritage, village..." class="w-full text-sm bg-transparent border-0" style="box-shadow:none"></div>
+<button onclick="toggleSheet(true)" class="md:hidden gradient-warm text-white rounded-xl py-3 font-semibold flex items-center justify-center gap-2"><i data-lucide="sliders-horizontal" class="w-4 h-4"></i> Filters</button>
+<button onclick="navigate('home');setTimeout(()=>scrollToId('contact'),400)" class="hidden md:flex items-center gap-2 px-6 rounded-xl bg-charcoal text-white text-sm font-semibold"><i data-lucide="message-circle" class="w-4 h-4"></i> Custom Requirement?</button>
+</div></div>
+</section>
+<section class="max-w-7xl mx-auto px-5 md:px-8 py-10 grid lg:grid-cols-[280px_1fr] gap-8">
+<aside class="hidden lg:block"><div class="sticky top-28 bg-white border border-peach/60 rounded-[22px] p-6 shadow-card space-y-5" id="desktopFilters"></div></aside>
+<div>
+<div class="flex items-center justify-between mb-5"><p class="text-sm text-stonewarm"><span id="propCount" class="font-bold text-charcoal">0</span> properties found</p><select id="f-sort" class="text-sm border border-peach/60 rounded-full px-4 py-2 bg-white font-medium"><option value="featured">Sort: Featured</option><option value="villas">Villas first</option><option value="plots">Plots first</option><option value="heritage">Heritage first</option></select></div>
+<div id="propGrid" class="grid sm:grid-cols-2 xl:grid-cols-3 gap-5"></div>
+<div id="propEmpty" class="hidden text-center py-16 bg-white border border-dashed border-peach rounded-[22px]"><i data-lucide="search-x" class="w-10 h-10 mx-auto text-stonewarm"></i><p class="font-serif text-2xl mt-4">No matches in showcase</p><p class="text-sm text-stonewarm mt-2">New verified options arrive weekly — tell Modinaa your brief.</p><a href="https://wa.me/917045431681?text=Hi%20Modinaa%2C%20I%20couldn%27t%20find%20my%20match." target="_blank" class="inline-flex mt-5 gradient-warm text-white px-6 py-3 rounded-full text-sm font-semibold">Share Requirement</a></div>
+</div>
+</section>
+</div>
+
+<div id="page-property" class="page-view"><div id="propertyDetail"></div><div class="h-24 md:hidden"></div>
+<div id="stickyEnquiry" class="md:hidden fixed bottom-0 inset-x-0 z-[50] glass border-t border-peach/60 p-3 grid grid-cols-3 gap-2">
+<a id="stickyCall" href="tel:+917045431681" class="flex items-center justify-center gap-1.5 bg-white border border-charcoal/10 rounded-xl py-3 text-sm font-semibold"><i data-lucide="phone" class="w-4 h-4"></i> Call</a>
+<a id="stickyWA" href="#" target="_blank" class="flex items-center justify-center gap-1.5 bg-[#25D366] text-white rounded-xl py-3 text-sm font-semibold col-span-2"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Enquiry</a>
+</div></div>
+
+<div id="page-location" class="page-view"><div id="locationDetail"></div></div>
+</main>
+
+<footer class="bg-charcoal text-white pt-16 pb-8 relative overflow-hidden">
+<div class="blob w-96 h-96 bg-terracotta/20 -top-20 right-0"></div>
+<div class="max-w-7xl mx-auto px-5 md:px-8 relative">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+<div><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-full bg-white/10 border border-gold/40 flex items-center justify-center"><span class="font-serif text-gold font-bold">MN</span></div><div><p class="font-serif font-bold">MN Realtor Goa</p><p class="text-[10px] tracking-[0.3em] text-gold uppercase">Goan | Dependable</p></div></div><p class="text-sm text-white/55 mt-4 leading-relaxed">Verified & TCP approved plots, private luxury villas and Goan heritage houses. Personally guided by Modinaa.</p><div class="flex gap-2 mt-5"><a href="https://instagram.com/modina.mnrealtor" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gradient-to-br hover:from-[#F58529] hover:to-[#DD2A7B] transition"><i data-lucide="instagram" class="w-4 h-4"></i></a><a href="https://wa.me/917045431681" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#25D366] transition"><i data-lucide="message-circle" class="w-4 h-4"></i></a><a href="tel:+917045431681" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-terracotta transition"><i data-lucide="phone" class="w-4 h-4"></i></a></div></div>
+<div><p class="text-xs font-bold tracking-[0.25em] uppercase text-gold">Explore</p><ul class="mt-4 space-y-2.5 text-sm text-white/65"><li><a href="#/properties" data-route="properties" class="hover:text-white">All Properties</a></li><li><a href="#" data-scroll="villas" class="hover:text-white">Luxury Villas</a></li><li><a href="#" data-scroll="plots" class="hover:text-white">Verified Plots & Land</a></li><li><a href="#" data-scroll="heritage" class="hover:text-white">Heritage Homes</a></li><li><a href="#" data-scroll="about" class="hover:text-white">About Modinaa</a></li></ul></div>
+<div><p class="text-xs font-bold tracking-[0.25em] uppercase text-gold">Goa Locations</p><ul class="mt-4 space-y-2.5 text-sm text-white/65" id="footerLocs"></ul></div>
+<div><p class="text-xs font-bold tracking-[0.25em] uppercase text-gold">Contact</p><ul class="mt-4 space-y-3 text-sm text-white/65"><li class="flex gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gold shrink-0"></i> Goa, India — North Goa focus</li><li class="flex gap-2"><i data-lucide="phone" class="w-4 h-4 text-gold shrink-0"></i> +91 70454 31681</li><li class="flex gap-2"><i data-lucide="instagram" class="w-4 h-4 text-gold shrink-0"></i> @modina.mnrealtor</li></ul><a href="#" data-scroll="contact" class="btn-shine inline-flex mt-5 gradient-warm px-6 py-3 rounded-full text-sm font-semibold">Enquire Now</a></div>
+</div>
+<div class="mt-12 pt-6 border-t border-white/10 text-[11px] text-white/40 leading-relaxed"><p><strong class="text-white/60">Content & Compliance Note:</strong> Property visuals are representative of the Goa portfolio style. MN Realtor Goa does not advertise fixed prices, guaranteed availability, returns, distances or legal outcomes. All specifics — price, exact location, title, approvals, amenities and availability — are <span class="text-peach">“Details available on enquiry”</span> and shared privately by Modinaa for verification. Buyers should independently verify all documents with legal counsel. Sitemap: / • /properties • /properties/[slug] • /locations/[slug] • #about • #contact</p><div class="mt-4 flex flex-col md:flex-row justify-between gap-2"><p>© 2026 MN Realtor Goa • Crafted with care in Goa</p><p>Goan | Dependable • 87 posts • 1,639 followers</p></div></div>
+</div>
+</footer>
+
+<div id="sheetOverlay" onclick="toggleSheet(false)" class="fixed inset-0 bg-charcoal/60 backdrop-blur-sm z-[60] hidden"></div>
+<div id="filterSheet" class="fixed bottom-0 inset-x-0 z-[61] bg-cream rounded-t-[28px] max-h-[85vh] overflow-y-auto p-6 md:hidden"><div class="w-12 h-1.5 bg-charcoal/15 rounded-full mx-auto mb-4"></div><div class="flex items-center justify-between mb-4"><p class="font-serif text-xl font-semibold">Filters</p><button onclick="toggleSheet(false)" class="w-9 h-9 rounded-full bg-white border flex items-center justify-center"><i data-lucide="x" class="w-5 h-5"></i></button></div><div id="mobileFilters" class="space-y-4"></div><button onclick="toggleSheet(false)" class="mt-6 w-full gradient-warm text-white rounded-xl py-4 font-semibold">Show Results</button></div>
+
+<div id="lightbox" class="lightbox fixed inset-0 z-[80] bg-charcoal/95 hidden items-center justify-center p-4">
+<button onclick="closeLightbox()" class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white/10 text-white flex items-center justify-center"><i data-lucide="x" class="w-6 h-6"></i></button>
+<button onclick="lbNav(-1)" class="absolute left-3 md:left-8 w-11 h-11 rounded-full bg-white/10 text-white flex items-center justify-center"><i data-lucide="chevron-left" class="w-6 h-6"></i></button>
+<img id="lbImg" src="" class="max-h-[82vh] max-w-full rounded-2xl object-contain shadow-2xl" alt="gallery">
+<button onclick="lbNav(1)" class="absolute right-3 md:right-8 w-11 h-11 rounded-full bg-white/10 text-white flex items-center justify-center"><i data-lucide="chevron-right" class="w-6 h-6"></i></button>
+<p id="lbCount" class="absolute bottom-6 text-white/60 text-sm"></p>
+</div>
+
+<a href="https://wa.me/917045431681?text=Hi%20Modinaa%2C%20I%27m%20interested%20in%20a%20property%20in%20Goa.%20Please%20share%20details." target="_blank" class="fixed bottom-20 md:bottom-6 right-4 md:right-6 z-[50] group flex items-center gap-3"><span class="hidden group-hover:block glass text-xs font-semibold px-4 py-2 rounded-full shadow-card border border-peach whitespace-nowrap">Chat with Modinaa</span><span class="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_12px_35px_-8px_rgba(37,211,102,.7)] hover:scale-110 transition relative"><span class="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20"></span><i data-lucide="message-circle" class="w-6 h-6 relative"></i></span></a>
+<button id="toTop" onclick="scrollToTop()" class="fixed bottom-20 md:bottom-24 right-4 md:right-[26px] z-[49] w-11 h-11 rounded-full bg-charcoal text-white hidden items-center justify-center shadow-card opacity-0 transition border border-gold/30"><i data-lucide="arrow-up" class="w-5 h-5"></i></button>
+<div id="toast" class="fixed top-24 left-1/2 -translate-x-1/2 z-[90] glass border border-peach px-6 py-3 rounded-full text-sm font-semibold shadow-card opacity-0 pointer-events-none transition-all duration-500 flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i><span id="toastMsg"></span></div>
+
+<script>
+const LOCATIONS = [
+{slug:'siolim', name:'Siolim', tag:'River & Village Chic', img:'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=75&auto=format&fit=crop', desc:'Leafy lanes, river light and some of North Goa\'s most loved villa neighbourhoods. A favourite for private luxury living.', vibe:['Villas','Cafes','River']},
+{slug:'saligao', name:'Saligao', tag:'Green & Serene', img:'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=75&auto=format&fit=crop', desc:'Paddy fields, heritage chapels and quiet luxury. Saligao blends village calm with easy access to the coast.', vibe:['Heritage','Fields','Calm']},
+{slug:'verla-parra', name:'Verla & Parra', tag:'Coconut Sentinels', img:'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=75&auto=format&fit=crop', desc:'Famous palm-lined Parra road, Portuguese homes and emerging villa pockets. Verla offers peaceful residential charm.', vibe:['Palms','Heritage','Villas']},
+{slug:'moira-aldona', name:'Moira & Aldona', tag:'Heritage Heartland', img:'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=75&auto=format&fit=crop', desc:'Some of Goa\'s prettiest heritage villages — balcãos, laterite walls and slow island-like living.', vibe:['Portuguese','River','Legacy']},
+{slug:'tivim-colvale', name:'Tivim / Colvale', tag:'Land & Growth', img:'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=75&auto=format&fit=crop', desc:'Open green parcels and strong connectivity. A sought-after belt for verified plots and future homes.', vibe:['Plots','Green','Access']},
+{slug:'guirim-sangolda', name:'Guirim / Sangolda', tag:'Central & Connected', img:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75&auto=format&fit=crop', desc:'Centrally placed between Mapusa and the coast — practical, residential and well-connected village living.', vibe:['Residential','Central','Value']},
+{slug:'portuguese-villages', name:'Portuguese Villages', tag:'Timeless Goa', img:'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=75&auto=format&fit=crop', desc:'A curated trail of Indo-Portuguese character homes across North Goa\'s most storied wards and vaddos.', vibe:['Character','History','Rare']},
+];
+const PROPERTIES = [
+{slug:'private-luxury-villa-siolim-river', title:'Private Luxury Villa — Siolim', location:'Siolim, North Goa', locationSlug:'siolim', type:'Private Luxury Villa', category:'villas', beds:4, baths:5, area:'Details available on enquiry', status:'Available on Enquiry', band:'3Cr+', featured:true, img:'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1000&q=75&auto=format&fit=crop', gallery:['https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80&auto=format&fit=crop'], desc:'A private, design-led villa in the heart of Siolim\'s villa district. Part of the 3Cr+ private collection — full specs, price and availability shared on WhatsApp enquiry.', highlights:['Private villa positioning in Siolim','Showcase of 3Cr+ curation','Personal preview by Modinaa','Site visit by appointment'], amenities:['Private Pool (as applicable)','Landscaped Outdoors','Modern Interiors','Parking'], specs:{'Configuration':'Details available on enquiry','Plot / Built-up':'Details available on enquiry','Furnishing':'Details available on enquiry','Possession':'Details available on enquiry'}},
+{slug:'luxury-villa-saligao-fields', title:'Field-Facing Villa — Saligao', location:'Saligao, North Goa', locationSlug:'saligao', type:'Private Luxury Villa', category:'villas', beds:4, baths:4, area:'Details available on enquiry', status:'Available on Enquiry', band:'3Cr+', featured:true, img:'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1000&q=75&auto=format&fit=crop', gallery:['https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80&auto=format&fit=crop'], desc:'Wake to paddy greens in Saligao. This showcase villa represents the quiet-luxury brief most buyers ask Modinaa for.', highlights:['Saligao village setting','Green / open outlook','Private collection showcase','WhatsApp-first details'], amenities:['Private Outdoors','Premium Finishes','Village Setting','Gated Options'], specs:{'Configuration':'Details available on enquiry','Facing':'Details available on enquiry','Title Direction':'Discussed on enquiry','Availability':'Details available on enquiry'}},
+{slug:'heritage-house-moira', title:'Goan Heritage House — Moira', location:'Moira, North Goa', locationSlug:'moira-aldona', type:'Goan Heritage House', category:'heritage', beds:3, baths:3, area:'Details available on enquiry', status:'Heritage', band:'3Cr+', featured:true, img:'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1000&q=75&auto=format&fit=crop', gallery:['https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80&auto=format&fit=crop'], desc:'A character-filled heritage home in Moira\'s storied lanes — oyster windows, high ceilings and village soul.', highlights:['Portuguese-era character','Moira heritage ward','Rare village opportunity','Documentation guidance'], amenities:['Heritage Architecture','Courtyard Feel','Village Lane','Mature Greens'], specs:{'Era / Style':'Details available on enquiry','Structure':'To be verified on enquiry','Plot Size':'Details available on enquiry','Condition':'Details available on enquiry'}},
+{slug:'verified-plot-tivim', title:'Verified Plot — Tivim', location:'Tivim, North Goa', locationSlug:'tivim-colvale', type:'Verified Plot', category:'plots', beds:null, baths:null, area:'Details available on enquiry', status:'Plot / Land', band:'On Enquiry', featured:true, img:'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1000&q=75&auto=format&fit=crop', gallery:['https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80&auto=format&fit=crop'], desc:'A verified, TCP-direction plot in the Tivim belt — suited for a future villa or land holding.', highlights:['TCP-approval direction focus','Clear-access orientation','Build / hold flexibility','Pre-visit paper discussion'], amenities:['Road Access','Green Surrounds','Development Potential','Village Location'], specs:{'Area':'Details available on enquiry','Zone / Conversion':'Details available on enquiry','Access':'Details available on enquiry','Documents':'Shared on enquiry'}},
+{slug:'villa-parra-palm-lane', title:'Designer Villa — Parra', location:'Parra, North Goa', locationSlug:'verla-parra', type:'Private Luxury Villa', category:'villas', beds:3, baths:4, area:'Details available on enquiry', status:'Ready', band:'3Cr+', featured:true, img:'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&q=75&auto=format&fit=crop', gallery:['https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80&auto=format&fit=crop'], desc:'Minutes from Parra\'s iconic palm road — a contemporary villa balancing privacy and connectivity.', highlights:['Parra address','Contemporary design','Private outdoor living','Ready-direction options'], amenities:['Pool & Deck','Designer Interiors','Landscaping','Parking'], specs:{'Configuration':'Details available on enquiry','Built-up':'Details available on enquiry','Furnishing':'Details available on enquiry','Status':'Details available on enquiry'}},
+{slug:'plot-colvale-green', title:'Green Parcel — Colvale', location:'Colvale, North Goa', locationSlug:'tivim-colvale', type:'Land / Investment', category:'land', beds:null, baths:null, area:'Details available on enquiry', status:'Plot / Land', band:'On Enquiry', featured:false, img:'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1000&q=75&auto=format&fit=crop', gallery:['https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80&auto=format&fit=crop'], desc:'Open green land in Colvale for farm-style living or long-term holding.', highlights:['Open green setting','Colvale connectivity','Hold / build options','Guided site walk'], amenities:['Open Land','Road Connectivity','Green Belt','Village Setting'], specs:{'Area':'Details available on enquiry','Survey':'Details available on enquiry','Access':'Details available on enquiry','Title':'Details available on enquiry'}},
+{slug:'heritage-villa-aldona', title:'River-Side Heritage — Aldona', location:'Aldona, North Goa', locationSlug:'moira-aldona', type:'Goan Heritage House', category:'heritage', beds:4, baths:3, area:'Details available on enquiry', status:'Heritage', band:'3Cr+', featured:true, img:'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1000&q=75&auto=format&fit=crop', gallery:['https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80&auto=format&fit=crop'], desc:'Aldona\'s riverside calm meets Indo-Portuguese grace. A legacy-style home for those who collect stories.', highlights:['Aldona riverside zone','Legacy character','Quiet neighbourhood','Private viewings'], amenities:['Heritage Detailing','Verandahs','Gardens','Village Charm'], specs:{'Configuration':'Details available on enquiry','Plot':'Details available on enquiry','Condition':'Details available on enquiry','Papers':'Details available on enquiry'}},
+{slug:'residence-guirim-sangolda', title:'Village Residence — Guirim', location:'Guirim, North Goa', locationSlug:'guirim-sangolda', type:'Residential Property', category:'residential', beds:3, baths:2, area:'Details available on enquiry', status:'Ready', band:'On Enquiry', featured:false, img:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&q=75&auto=format&fit=crop', gallery:['https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&q=80&auto=format&fit=crop'], desc:'A practical, well-located residence in Guirim — ideal for year-round Goan living.', highlights:['Central location','Everyday convenience','Residential comfort','Easy connectivity'], amenities:['Parking','Balconies','Storage','Society / Lane'], specs:{'Configuration':'Details available on enquiry','Carpet / Built-up':'Details available on enquiry','Floor':'Details available on enquiry','Availability':'Details available on enquiry'}},
+{slug:'plot-verla-village', title:'Village Plot — Verla', location:'Verla, North Goa', locationSlug:'verla-parra', type:'Verified Plot', category:'plots', beds:null, baths:null, area:'Details available on enquiry', status:'Plot / Land', band:'On Enquiry', featured:false, img:'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1000&q=75&auto=format&fit=crop', gallery:['https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80&auto=format&fit=crop'], desc:'A peaceful village plot in Verla for a slow, green home build.', highlights:['Quiet village pocket','Build-your-villa base','Paper-first approach','Personal guidance'], amenities:['Village Setting','Green Views','Access Road','Build Potential'], specs:{'Area':'Details available on enquiry','Dimensions':'Details available on enquiry','Facing':'Details available on enquiry','Papers':'Details available on enquiry'}},
+{slug:'portuguese-home-parra', title:'Portuguese Character Home — Parra', location:'Parra, North Goa', locationSlug:'portuguese-villages', type:'Goan Heritage House', category:'heritage', beds:3, baths:2, area:'Details available on enquiry', status:'Heritage', band:'3Cr+', featured:false, img:'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1000&q=75&auto=format&fit=crop', gallery:['https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80&auto=format&fit=crop'], desc:'Sun-washed walls, laterite texture and Parra\'s beloved village energy.', highlights:['Parra village soul','Character architecture','Lifestyle address','Curated viewing'], amenities:['Courtyard','Sit-outs','Heritage Feel','Lane Living'], specs:{'Style':'Details available on enquiry','Plot':'Details available on enquiry','Restoration':'Details available on enquiry','Status':'Details available on enquiry'}},
+{slug:'villa-moira-palm', title:'Palm-Court Villa — Moira', location:'Moira, North Goa', locationSlug:'moira-aldona', type:'Private Luxury Villa', category:'villas', beds:4, baths:5, area:'Details available on enquiry', status:'Under Construction', band:'3Cr+', featured:false, img:'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1000&q=75&auto=format&fit=crop', gallery:['https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80&auto=format&fit=crop'], desc:'Resort-calm villa living wrapped in Moira palms — expansive decks, water and light.', highlights:['Moira villa enclave','Expansive deck living','Evening-light design','Staged payment direction'], amenities:['Pool','Decks','Landscaping','Premium Spec'], specs:{'Configuration':'Details available on enquiry','Stage':'Details available on enquiry','Handover':'Details available on enquiry','Price':'Details available on enquiry'}},
+{slug:'land-sangolda-investment', title:'Investment Land — Sangolda', location:'Sangolda, North Goa', locationSlug:'guirim-sangolda', type:'Land / Investment', category:'land', beds:null, baths:null, area:'Details available on enquiry', status:'Plot / Land', band:'On Enquiry', featured:false, img:'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1000&q=75&auto=format&fit=crop', gallery:['https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80&auto=format&fit=crop','https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200&q=80&auto=format&fit=crop'], desc:'A well-placed Sangolda holding for investors and future-home planners.', highlights:['Central Sangolda','Hold / develop','Connectivity edge','Private briefing'], amenities:['Access','Level Parcel','Green Context','Growth Belt'], specs:{'Area':'Details available on enquiry','Title':'Details available on enquiry','Zone':'Details available on enquiry','Price':'Details available on enquiry'}},
+];
+const FAQS = [
+{q:'How do I get price and exact location?', a:'Simply tap any WhatsApp Enquiry button. Modinaa shares complete details, price direction and availability privately — “Details available on enquiry” keeps serious buyers protected.'},
+{q:'What does “Verified & TCP approved” mean?', a:'It means Modinaa prioritises plots where TCP / conversion documentation can be discussed and verified. Exact papers vary per property and are shared for your legal verification.'},
+{q:'Which areas do you specialise in?', a:'Siolim, Saligao, Parra & Verla, Moira & Aldona, Guirim / Sangolda, Tivim / Colvale and select Portuguese village pockets.'},
+{q:'Do you work with 3Cr+ budgets?', a:'Yes — the private collection focuses on 3Cr+ villas, heritage and prime land, while select residential and plot options in other bands are also curated on request.'},
+{q:'Can I sell my Goa property with you?', a:'Absolutely. Share your property details on WhatsApp and Modinaa will guide you on presentation, buyer matching and site visits.'},
+{q:'Are site visits private?', a:'Yes. All visits are by appointment, unhurried and one-family-at-a-time wherever possible.'},
+];
+const CATS = [
+{name:'Verified & TCP Approved Plots', count:'Plots', img:'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=75&auto=format&fit=crop', icon:'file-check', type:'Verified Plot', blurb:'Documentation-first land in Tivim, Colvale, Verla & beyond.'},
+{name:'Private Luxury Villas', count:'3Cr+ Collection', img:'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=75&auto=format&fit=crop', icon:'crown', type:'Private Luxury Villa', blurb:'Private pools, decks & quiet indulgence in Siolim, Saligao, Parra.'},
+{name:'Goan Heritage Houses', count:'Rare & Storied', img:'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=75&auto=format&fit=crop', icon:'landmark', type:'Goan Heritage House', blurb:'Portuguese souls in Moira, Aldona & Parra.'},
+{name:'Residential Properties', count:'Year-Round Living', img:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75&auto=format&fit=crop', icon:'home', type:'Residential Property', blurb:'Comfortable village residences, centrally connected.'},
+{name:'Land / Investment', count:'Hold & Grow', img:'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=75&auto=format&fit=crop', icon:'trending-up', type:'Land / Investment', blurb:'Strategic parcels for legacy holdings.'},
+{name:'All Properties', count:'Full Showcase', img:'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=75&auto=format&fit=crop', icon:'layout-grid', type:'', blurb:'Browse the complete boutique portfolio.'},
+];
+let filters = {search:'', location:'', type:'', budget:'', beds:'', status:''};
+let currentLB = []; let lbIndex = 0;
+const WA = '917045431681';
+const waLink = (msg)=>`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
+let lenis = null;
+
+function toast(msg){ const t=document.getElementById('toast'); document.getElementById('toastMsg').textContent=msg; t.style.opacity='1'; t.style.transform='translate(-50%,0)'; setTimeout(()=>{t.style.opacity='0'; t.style.transform='translate(-50%,-12px)'},2600); }
+function scrollHoriz(id,dir){ document.getElementById(id).scrollBy({left:dir*360, behavior:'smooth'}); }
+function scrollToId(id){ const el=document.getElementById(id); if(!el) return; if(lenis){ lenis.scrollTo(el,{offset:-70,duration:1.4}); } else { el.scrollIntoView({behavior:'smooth'}); } }
+function scrollToTop(){ if(lenis) lenis.scrollTo(0,{duration:1.4}); else window.scrollTo({top:0,behavior:'smooth'}); }
+
+function propCard(p, snap=true){
+const wa = waLink(`Hi Modinaa, I'm interested in ${p.title} (${p.location}). Please share the complete details, price and availability.`);
+return `<article class="prop-card skew-on-scroll ${snap?'snap-start shrink-0 w-[300px] md:w-[360px]':''} bg-white rounded-[22px] overflow-hidden border border-peach/60 shadow-card flex flex-col">
+<div class="relative h-56 md:h-60 overflow-hidden cursor-pointer" onclick="navigate('property','${p.slug}')">
+<img src="${p.img}" alt="${p.title}" loading="lazy" class="card-img w-full h-full object-cover">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent"></div>
+<span class="absolute top-3 left-3 glass text-charcoal text-[11px] font-bold px-3 py-1.5 rounded-full border border-white/50">${p.type}</span>
+${p.band==='3Cr+'?`<span class="absolute top-3 right-3 gradient-warm text-white text-[11px] font-bold px-3 py-1.5 rounded-full">3Cr+ Collection</span>`:`<span class="absolute top-3 right-3 bg-charcoal/80 backdrop-blur text-white text-[11px] font-bold px-3 py-1.5 rounded-full">${p.status}</span>`}
+<span class="absolute bottom-3 left-3 text-white text-xs flex items-center gap-1.5 font-medium"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> ${p.location}</span>
+</div>
+<div class="p-5 flex-1 flex flex-col">
+<h3 class="font-serif text-xl font-semibold leading-snug cursor-pointer hover:text-terracotta transition" onclick="navigate('property','${p.slug}')">${p.title}</h3>
+<div class="flex flex-wrap items-center gap-2 mt-3 text-[13px] text-cocoa">
+${p.beds?`<span class="flex items-center gap-1.5 bg-sand px-3 py-1.5 rounded-full font-medium"><i data-lucide="bed-double" class="w-3.5 h-3.5 text-terracotta"></i> ${p.beds} Beds</span>`:''}
+${p.baths?`<span class="flex items-center gap-1.5 bg-sand px-3 py-1.5 rounded-full font-medium"><i data-lucide="bath" class="w-3.5 h-3.5 text-terracotta"></i> ${p.baths} Baths</span>`:''}
+<span class="flex items-center gap-1.5 bg-sand px-3 py-1.5 rounded-full font-medium"><i data-lucide="ruler" class="w-3.5 h-3.5 text-terracotta"></i> Area on enquiry</span>
+</div>
+<p class="text-sm text-stonewarm mt-3 line-clamp-2 flex-1">${p.desc}</p>
+<p class="mt-3 text-sm"><span class="text-stonewarm">Price:</span> <span class="font-semibold text-golddeep italic">Details available on enquiry</span></p>
+<div class="grid grid-cols-2 gap-2 mt-4">
+<button onclick="navigate('property','${p.slug}')" class="bg-charcoal text-white rounded-xl py-3 text-sm font-semibold hover:bg-terracotta transition flex items-center justify-center gap-1.5"><i data-lucide="eye" class="w-4 h-4"></i> View Details</button>
+<a href="${wa}" target="_blank" class="bg-[#25D366]/10 border border-[#25D366]/30 text-[#128C4B] rounded-xl py-3 text-sm font-semibold hover:bg-[#25D366] hover:text-white transition flex items-center justify-center gap-1.5"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp</a>
+</div></div></article>`;
+}
+
+function renderHome(){
+document.getElementById('featuredRow').innerHTML = PROPERTIES.filter(p=>p.featured).map(p=>propCard(p)).join('');
+document.getElementById('villaStrip').innerHTML = PROPERTIES.filter(p=>p.category==='villas').map(p=>propCard(p)).join('');
+document.getElementById('categoryGrid').innerHTML = CATS.map(c=>`
+<div onclick="filterAndGo('${c.type}')" class="loc-card group relative rounded-[22px] overflow-hidden h-64 cursor-pointer shadow-card">
+<img src="${c.img}" alt="${c.name}" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/25 to-transparent"></div>
+<div class="absolute top-4 left-4 glass text-charcoal text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5"><i data-lucide="${c.icon}" class="w-3.5 h-3.5 text-terracotta"></i> ${c.count}</div>
+<div class="absolute bottom-0 p-5 w-full"><h3 class="font-serif text-white text-xl font-semibold">${c.name}</h3><p class="text-white/65 text-sm mt-1">${c.blurb}</p><span class="inline-flex items-center gap-2 text-peach text-sm font-semibold mt-3 group-hover:gap-3 transition-all">Explore <i data-lucide="arrow-right" class="w-4 h-4"></i></span></div>
+</div>`).join('');
+document.getElementById('locationGrid').innerHTML = LOCATIONS.map(l=>`
+<div onclick="navigate('location','${l.slug}')" class="loc-card group relative rounded-[22px] overflow-hidden h-72 cursor-pointer shadow-card">
+<img src="${l.img}" alt="${l.name}" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent"></div>
+<div class="absolute top-4 left-4 glass-dark text-peach text-[11px] font-bold px-3 py-1.5 rounded-full border border-white/20">${l.tag}</div>
+<div class="absolute bottom-0 p-5"><h3 class="font-serif text-white text-2xl font-semibold">/locations/${l.slug}</h3><p class="font-serif text-peach text-lg -mt-1">${l.name}</p><div class="flex gap-1.5 mt-2">${l.vibe.map(v=>`<span class="text-[10px] bg-white/15 backdrop-blur text-white px-2.5 py-1 rounded-full">${v}</span>`).join('')}</div></div>
+<span class="absolute bottom-5 right-5 w-11 h-11 rounded-full bg-white text-charcoal flex items-center justify-center group-hover:bg-coral group-hover:text-white group-hover:rotate-45 transition-all duration-500"><i data-lucide="arrow-up-right" class="w-5 h-5"></i></span>
+</div>`).join('');
+const cin = [...PROPERTIES.flatMap(p=>p.gallery.slice(0,1)), 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1000&q=75&auto=format&fit=crop','https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&q=75&auto=format&fit=crop'];
+const cinSlice = cin.slice(0,8);
+document.getElementById('cinematicRow').innerHTML = cinSlice.map((src,i)=>{
+const p = PROPERTIES[i % PROPERTIES.length];
+return `<div class="cine-card snap-start shrink-0 w-[78vw] sm:w-[420px] h-[320px] rounded-[20px] overflow-hidden relative group cursor-pointer border border-white/10" onclick="openLightbox(${i}, ${JSON.stringify(cinSlice).replace(/"/g,'&quot;')})">
+<img src="${src}" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition duration-[1.5s]" alt="showcase ${i+1}">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/10 to-transparent"></div>
+<p class="absolute bottom-4 left-5 text-white font-serif text-lg">Golden Hour 0${i+1}</p>
+<p class="absolute bottom-4 left-5 mt-6 pt-7 text-peach/80 text-xs tracking-widest uppercase">${p? p.location : 'North Goa'}</p>
+<span class="absolute top-4 right-4 w-10 h-10 rounded-full glass-dark text-white flex items-center justify-center border border-white/20"><i data-lucide="expand" class="w-4 h-4"></i></span>
+</div>`}).join('');
+document.getElementById('highlightsRow').innerHTML = LOCATIONS.map(l=>`
+<div onclick="navigate('location','${l.slug}')" class="flex flex-col items-center gap-2 shrink-0 cursor-pointer group min-w-[76px]">
+<div class="highlight-ring group-hover:scale-105 transition"><img src="${l.img}" class="w-16 h-16 rounded-full object-cover border-[3px] border-white" alt="${l.name}" loading="lazy"></div>
+<p class="text-[11px] font-medium text-center leading-tight max-w-[76px] truncate">${l.name}</p></div>`).join('');
+document.getElementById('instaGrid').innerHTML = PROPERTIES.slice(0,6).map((p,i)=>`
+<div onclick="navigate('property','${p.slug}')" class="relative rounded-2xl overflow-hidden h-56 md:h-64 cursor-pointer group">
+<img src="${p.img}" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="${p.title}">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 to-transparent opacity-80"></div>
+<span class="absolute top-3 right-3 text-white/90"><i data-lucide="${i%2===0?'clapperboard':'image'}" class="w-5 h-5"></i></span>
+<p class="absolute bottom-3 left-3 right-3 text-white text-sm font-medium leading-snug">${p.title}</p></div>`).join('');
+document.getElementById('faqList').innerHTML = FAQS.map((f,i)=>`
+<div class="faq-item bg-white border border-peach/60 rounded-2xl overflow-hidden ${i===0?'open':''}">
+<button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-5 text-left font-semibold">${f.q}<span class="faq-icon w-8 h-8 rounded-full gradient-warm text-white flex items-center justify-center shrink-0 text-lg font-light">+</span></button>
+<div class="faq-answer"><p class="px-5 pb-5 text-sm text-stonewarm leading-relaxed">${f.a}</p></div></div>`).join('');
+const mItems = ['Verified & TCP Approved Plots','Private Luxury Villas • 3Cr+','Goan Heritage Houses','Siolim • Saligao • Parra • Aldona • Moira','Goan | Dependable • @modina.mnrealtor'];
+document.getElementById('marquee').innerHTML = [...mItems,...mItems,...mItems,...mItems].map(t=>`<span class="flex items-center gap-10 shrink-0"><span>${t}</span><span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span></span>`).join('');
+document.getElementById('footerLocs').innerHTML = LOCATIONS.slice(0,5).map(l=>`<li><a href="#" data-scroll="locations" onclick="navigate('location','${l.slug}');return false;" class="hover:text-white">${l.name}</a></li>`).join('');
+const locSel = document.getElementById('s-location');
+if(locSel && locSel.options.length<=1){ LOCATIONS.forEach(l=>{ const o=document.createElement('option'); o.value=l.name; o.textContent=l.name; locSel.appendChild(o); }); }
+refreshIcons();
+}
+
+function filterAndGo(type){ filters = {search:'', location:'', type:type||'', budget:'', beds:'', status:''}; navigate('properties'); renderProperties(); toast(type? `Showing: ${type}` : 'Showing all properties'); }
+function doHeroSearch(){
+filters.location = document.getElementById('s-location').value || '';
+filters.type = document.getElementById('s-type').value || '';
+filters.budget = document.getElementById('s-budget').value || '';
+filters.beds = document.getElementById('s-beds').value || '';
+filters.status = document.getElementById('s-status').value || '';
+const txn = document.getElementById('s-txn').value;
+if(txn==='Sell'){ navigate('home'); setTimeout(()=>scrollToId('contact'),300); toast('Tell Modinaa about your property to sell'); return; }
+navigate('properties'); renderProperties(); toast('Search applied — boutique matches below');
+}
+function filterHTML(){
+const locOpts = `<option value="">All Locations</option>` + LOCATIONS.map(l=>`<option ${filters.location===l.name?'selected':''}>${l.name}</option>`).join('');
+return `
+<div><p class="text-xs font-bold uppercase tracking-widest text-stonewarm mb-2">Search</p><input id="mf-search" value="${filters.search}" placeholder="Villa, plot, village..." class="w-full border border-peach/60 rounded-xl px-4 py-3 text-sm bg-cream"></div>
+<div><p class="text-xs font-bold uppercase tracking-widest text-stonewarm mb-2">Location</p><select id="mf-loc" class="w-full border border-peach/60 rounded-xl px-3 py-3 text-sm bg-cream">${locOpts}</select></div>
+<div><p class="text-xs font-bold uppercase tracking-widest text-stonewarm mb-2">Type</p><select id="mf-type" class="w-full border border-peach/60 rounded-xl px-3 py-3 text-sm bg-cream"><option value="">All Types</option>${['Private Luxury Villa','Verified Plot','Goan Heritage House','Residential Property','Land / Investment'].map(t=>`<option ${filters.type===t?'selected':''}>${t}</option>`).join('')}</select></div>
+<div><p class="text-xs font-bold uppercase tracking-widest text-stonewarm mb-2">Budget</p><div class="flex flex-wrap gap-2">${['','Under 1 Cr','1 – 2 Cr','2 – 3 Cr','3Cr+'].map(b=>`<button onclick="setBudget('${b}')" class="px-3 py-2 rounded-full text-xs font-semibold border ${filters.budget===b?'gradient-warm text-white border-transparent':'bg-cream border-peach/60'}">${b===''?'Any':b}</button>`).join('')}</div></div>
+<div><p class="text-xs font-bold uppercase tracking-widest text-stonewarm mb-2">Bedrooms</p><div class="flex gap-2">${['','2','3','4','5+'].map(b=>`<button onclick="setBeds('${b}')" class="flex-1 py-2 rounded-xl text-sm font-semibold border ${filters.beds===b?'bg-charcoal text-white':'bg-cream border-peach/60'}">${b===''?'Any':b}</button>`).join('')}</div></div>
+<div><p class="text-xs font-bold uppercase tracking-widest text-stonewarm mb-2">Status</p><select id="mf-status" class="w-full border border-peach/60 rounded-xl px-3 py-3 text-sm bg-cream"><option value="">Any Status</option>${['Ready','Under Construction','Plot / Land','Heritage','Available on Enquiry'].map(s=>`<option ${filters.status===s?'selected':''}>${s}</option>`).join('')}</select></div>
+<button onclick="clearFilters()" class="w-full py-3 rounded-xl border border-charcoal/15 text-sm font-semibold hover:bg-charcoal hover:text-white transition">Clear all filters</button>`;
+}
+function bindFilterInputs(){
+const s=document.getElementById('mf-search'); if(s) s.oninput=e=>{filters.search=e.target.value; renderProperties(); const m=document.querySelector('#mobileFilters #mf-search');};
+const l=document.getElementById('mf-loc'); if(l) l.onchange=e=>{filters.location=e.target.value; syncFilters(); renderProperties();};
+const t=document.getElementById('mf-type'); if(t) t.onchange=e=>{filters.type=e.target.value; syncFilters(); renderProperties();};
+const st=document.getElementById('mf-status'); if(st) st.onchange=e=>{filters.status=e.target.value; syncFilters(); renderProperties();};
+const fs=document.getElementById('f-search'); if(fs) fs.oninput=e=>{filters.search=e.target.value; renderProperties();};
+const so=document.getElementById('f-sort'); if(so) so.onchange=()=>renderProperties();
+}
+function syncFilters(){ renderFilterPanels(false); }
+function renderFilterPanels(bind=true){ document.getElementById('desktopFilters').innerHTML = filterHTML(); document.getElementById('mobileFilters').innerHTML = filterHTML(); if(bind) bindFilterInputs(); else { bindFilterInputs(); } refreshIcons(); }
+function setBudget(b){ filters.budget=b; renderFilterPanels(); renderProperties(); }
+function setBeds(b){ filters.beds=b; renderFilterPanels(); renderProperties(); }
+function clearFilters(){ filters={search:'',location:'',type:'',budget:'',beds:'',status:''}; const fs=document.getElementById('f-search'); if(fs) fs.value=''; renderFilterPanels(); renderProperties(); toast('Filters cleared'); }
+function getFiltered(){
+let list=[...PROPERTIES];
+if(filters.search){ const q=filters.search.toLowerCase(); list=list.filter(p=>(p.title+p.location+p.type+p.desc).toLowerCase().includes(q)); }
+if(filters.location){ list=list.filter(p=>p.location.includes(filters.location.split(' ')[0]) || p.locationSlug===LOCATIONS.find(l=>l.name===filters.location)?.slug); }
+if(filters.type){ list=list.filter(p=>p.type===filters.type); }
+if(filters.budget){ if(filters.budget==='3Cr+') list=list.filter(p=>p.band==='3Cr+'); }
+if(filters.beds){ if(filters.beds==='5+') list=list.filter(p=>p.beds&&p.beds>=5); else if(filters.beds!=='') list=list.filter(p=>p.beds==parseInt(filters.beds)); }
+if(filters.status){ list=list.filter(p=>p.status===filters.status); }
+const sort=document.getElementById('f-sort')?.value||'featured';
+if(sort==='villas') list.sort((a,b)=>(b.category==='villas')-(a.category==='villas'));
+if(sort==='plots') list.sort((a,b)=>((b.category==='plots'||b.category==='land')?1:0)-((a.category==='plots'||a.category==='land')?1:0));
+if(sort==='heritage') list.sort((a,b)=>(b.category==='heritage')-(a.category==='heritage'));
+return list;
+}
+function renderProperties(){
+renderFilterPanels();
+const list=getFiltered();
+document.getElementById('propCount').textContent=list.length;
+document.getElementById('propGrid').innerHTML=list.map(p=>propCard(p,false)).join('');
+document.getElementById('propEmpty').classList.toggle('hidden', list.length>0);
+refreshIcons();
+observeReveals();
+}
+
+function renderPropertyDetail(slug){
+const p=PROPERTIES.find(x=>x.slug===slug)||PROPERTIES[0];
+const wa=waLink(`Hi Modinaa, I'm interested in ${p.title} (${p.location}). Please share the complete details, price and availability.`);
+document.getElementById('stickyWA').href=wa;
+const similar=PROPERTIES.filter(x=>x.slug!==p.slug && x.category===p.category).concat(PROPERTIES.filter(x=>x.slug!==p.slug && x.category!==p.category)).slice(0,3);
+document.getElementById('propertyDetail').innerHTML=`
+<section class="relative -mt-[76px] pt-28 pb-8 bg-charcoal overflow-hidden">
+<img src="${p.img}" class="absolute inset-0 w-full h-full object-cover opacity-30" alt="${p.title}">
+<div class="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/80 to-charcoal"></div>
+<div class="relative max-w-7xl mx-auto px-5 md:px-8">
+<button onclick="navigate('properties')" class="flex items-center gap-2 text-peach text-sm font-semibold hover:gap-3 transition-all mb-4"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back to all properties</button>
+<div class="flex flex-wrap gap-2 mb-3"><span class="glass-dark text-peach text-xs px-4 py-1.5 rounded-full border border-white/15">${p.type}</span><span class="glass-dark text-peach text-xs px-4 py-1.5 rounded-full border border-white/15 flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> ${p.location}</span>${p.band==='3Cr+'?`<span class="gradient-warm text-white text-xs px-4 py-1.5 rounded-full font-bold">3Cr+ Collection</span>`:''}</div>
+<h1 class="font-serif text-white text-3xl md:text-5xl leading-tight max-w-3xl">${p.title}</h1>
+<p class="text-white/60 mt-3">Price: <span class="text-gold italic font-semibold">Details available on enquiry</span> • Status: ${p.status}</p>
+</div></section>
+<section class="max-w-7xl mx-auto px-5 md:px-8 py-10 grid lg:grid-cols-[1fr_380px] gap-8">
+<div>
+<div class="rounded-[24px] overflow-hidden shadow-card border border-peach/50 relative group cursor-zoom-in" onclick="openLightbox(0, ${JSON.stringify(p.gallery).replace(/"/g,'&quot;')})">
+<img id="mainGalImg" src="${p.gallery[0]}" class="w-full h-[320px] md:h-[480px] object-cover" alt="${p.title}">
+<span class="absolute bottom-4 right-4 glass px-4 py-2 rounded-full text-xs font-semibold flex items-center gap-2"><i data-lucide="expand" class="w-4 h-4"></i> Tap to expand • ${p.gallery.length} photos</span>
+</div>
+<div class="flex gap-3 mt-3 overflow-x-auto no-scrollbar pb-1">${p.gallery.map((g,i)=>`<img src="${g}" onclick="swapMainGal('${g}',this, ${JSON.stringify(p.gallery).replace(/"/g,'&quot;')}, ${i})" class="thumb ${i===0?'active':''} w-24 h-20 rounded-xl object-cover shrink-0" alt="view ${i+1}" loading="lazy">`).join('')}</div>
+<div class="mt-8 bg-white border border-peach/60 rounded-[22px] p-6 md:p-8 shadow-card">
+<h2 class="font-serif text-2xl font-semibold">About this property</h2><p class="text-cocoa mt-3 leading-relaxed">${p.desc}</p>
+<div class="grid sm:grid-cols-2 gap-3 mt-6">${p.highlights.map(h=>`<div class="flex items-start gap-2.5 bg-sand rounded-xl px-4 py-3 text-sm"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i> ${h}</div>`).join('')}</div>
+</div>
+<div class="mt-6 bg-white border border-peach/60 rounded-[22px] p-6 md:p-8 shadow-card">
+<h2 class="font-serif text-2xl font-semibold">Specifications</h2>
+<div class="mt-4 divide-y divide-peach/50">${Object.entries(p.specs).map(([k,v])=>`<div class="flex justify-between gap-4 py-3 text-sm"><span class="text-stonewarm">${k}</span><span class="font-semibold text-right">${v}</span></div>`).join('')}</div>
+<div class="mt-4 flex flex-wrap gap-2">${p.amenities.map(a=>`<span class="bg-blush border border-peach text-cocoa text-xs px-3 py-1.5 rounded-full">${a}</span>`).join('')}</div>
+</div>
+</div>
+<aside><div class="lg:sticky lg:top-28 space-y-4">
+<div class="bg-charcoal text-white rounded-[22px] p-6 relative overflow-hidden"><div class="blob w-56 h-56 bg-coral/25 -top-10 -right-10"></div>
+<p class="text-gold text-xs font-bold tracking-[0.25em] uppercase">Private Enquiry</p>
+<p class="font-serif text-2xl mt-2">Interested in<br>this property?</p>
+<p class="text-white/60 text-sm mt-2">Modinaa replies personally with price, exact location & availability.</p>
+<a href="${wa}" target="_blank" class="btn-shine mt-5 flex items-center justify-center gap-2 bg-[#25D366] rounded-xl py-4 font-semibold hover:brightness-110 transition"><i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp Modinaa</a>
+<a href="tel:+917045431681" class="mt-2 flex items-center justify-center gap-2 bg-white/10 border border-white/15 rounded-xl py-4 font-semibold hover:bg-white/20 transition"><i data-lucide="phone" class="w-4 h-4"></i> +91 70454 31681</a>
+<p class="text-[11px] text-white/40 mt-3 text-center">Mention: ${p.title}</p></div>
+<div class="bg-white border border-peach/60 rounded-[22px] p-6 shadow-card"><p class="font-semibold flex items-center gap-2"><i data-lucide="shield-check" class="w-5 h-5 text-terracotta"></i> Verification note</p><p class="text-sm text-stonewarm mt-2 leading-relaxed">All specifics are shared privately for your legal verification. Buyers should independently verify documents with counsel.</p></div>
+<button onclick="navigate('home');setTimeout(()=>scrollToId('contact'),350)" class="w-full border border-charcoal/15 rounded-xl py-4 text-sm font-semibold hover:bg-charcoal hover:text-white transition">Send detailed requirement</button>
+</div></aside>
+</section>
+<section class="max-w-7xl mx-auto px-5 md:px-8 pb-16"><h2 class="font-serif text-3xl mb-5">You may also <em class="italic text-gradient">love</em></h2><div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">${similar.map(s=>propCard(s,false)).join('')}</div></section>`;
+refreshIcons(); window.scrollTo({top:0}); if(lenis) lenis.scrollTo(0,{immediate:true});
+}
+
+function renderLocationDetail(slug){
+const l=LOCATIONS.find(x=>x.slug===slug)||LOCATIONS[0];
+const props=PROPERTIES.filter(p=>p.locationSlug===l.slug);
+const others=LOCATIONS.filter(x=>x.slug!==l.slug).slice(0,3);
+document.getElementById('locationDetail').innerHTML=`
+<section class="relative -mt-[76px] min-h-[62vh] flex items-end overflow-hidden bg-charcoal">
+<img src="${l.img}" class="absolute inset-0 w-full h-[120%] object-cover parallax-bg" alt="${l.name}">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-charcoal/30"></div>
+<div class="relative max-w-7xl mx-auto px-5 md:px-8 pb-12 pt-40 w-full">
+<button onclick="navigate('home')" class="flex items-center gap-2 text-peach text-sm font-semibold mb-4"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back home</button>
+<span class="glass-dark text-peach text-xs px-4 py-1.5 rounded-full border border-white/20">${l.tag}</span>
+<h1 class="font-serif text-white text-4xl md:text-6xl mt-3">/locations/${l.slug}<br><em class="italic text-gradient">${l.name}</em></h1>
+<p class="text-white/70 max-w-xl mt-4">${l.desc}</p>
+<div class="flex gap-2 mt-4">${l.vibe.map(v=>`<span class="text-xs bg-white/15 backdrop-blur text-white px-3 py-1.5 rounded-full border border-white/15">${v}</span>`).join('')}</div>
+</div></section>
+<section class="max-w-7xl mx-auto px-5 md:px-8 py-12">
+<h2 class="font-serif text-3xl">Properties in <em class="italic text-gradient">${l.name}</em> <span class="text-base text-stonewarm font-sans">(${props.length})</span></h2>
+${props.length?`<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">${props.map(p=>propCard(p,false)).join('')}</div>`:`<div class="mt-6 bg-white border border-dashed border-peach rounded-[22px] p-10 text-center"><p class="font-serif text-2xl">Off-market options available</p><p class="text-stonewarm text-sm mt-2">Not everything in ${l.name} is listed publicly. Ask Modinaa privately.</p><a class="inline-flex mt-5 gradient-warm text-white px-6 py-3 rounded-full text-sm font-semibold" target="_blank" href="${waLink(`Hi Modinaa, please share options in ${l.name}.`)}">Ask on WhatsApp</a></div>`}
+<h2 class="font-serif text-3xl mt-14 mb-5">Wander <em class="italic text-gradient">nearby villages</em></h2>
+<div class="grid sm:grid-cols-3 gap-5">${others.map(o=>`<div onclick="navigate('location','${o.slug}')" class="loc-card relative rounded-[22px] overflow-hidden h-60 cursor-pointer"><img src="${o.img}" class="absolute inset-0 w-full h-full object-cover" alt="${o.name}"><div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 to-transparent"></div><div class="absolute bottom-0 p-5"><p class="text-peach text-xs tracking-widest uppercase">${o.tag}</p><p class="font-serif text-white text-2xl">${o.name}</p></div></div>`).join('')}</div>
+</section>`;
+refreshIcons(); window.scrollTo({top:0}); if(lenis) lenis.scrollTo(0,{immediate:true});
+}
+
+function swapMainGal(src, el, arr, idx){ document.getElementById('mainGalImg').src=src; document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('active')); el.classList.add('active'); currentLB=arr; lbIndex=idx; }
+function toggleFaq(btn){ const item=btn.closest('.faq-item'); const was=item.classList.contains('open'); document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open')); if(!was) item.classList.add('open'); }
+function toggleSheet(open){ document.getElementById('filterSheet').classList.toggle('open',open); document.getElementById('sheetOverlay').classList.toggle('hidden',!open); }
+function openLightbox(idx, arr){ currentLB=arr; lbIndex=idx; updateLB(); const lb=document.getElementById('lightbox'); lb.classList.remove('hidden'); lb.classList.add('flex'); }
+function closeLightbox(){ const lb=document.getElementById('lightbox'); lb.classList.add('hidden'); lb.classList.remove('flex'); }
+function lbNav(d){ if(!currentLB.length) return; lbIndex=(lbIndex+d+currentLB.length)%currentLB.length; updateLB(); }
+function updateLB(){ document.getElementById('lbImg').src=currentLB[lbIndex]; document.getElementById('lbCount').textContent=(lbIndex+1)+' / '+currentLB.length; }
+function refreshIcons(){ if(window.lucide) lucide.createIcons(); }
+
+/* ROUTING */
+function navigate(page, slug){
+document.querySelectorAll('.page-view').forEach(v=>v.classList.remove('active'));
+if(page==='home'){ document.getElementById('page-home').classList.add('active'); history.replaceState(null,'','#/'); }
+else if(page==='properties'){ document.getElementById('page-properties').classList.add('active'); history.replaceState(null,'','#/properties'); renderProperties(); }
+else if(page==='property'){ document.getElementById('page-property').classList.add('active'); history.replaceState(null,'','#/property/'+slug); renderPropertyDetail(slug); }
+else if(page==='location'){ document.getElementById('page-location').classList.add('active'); history.replaceState(null,'','#/location/'+slug); renderLocationDetail(slug); }
+document.getElementById('mobileMenu').classList.remove('open');
+if(page!=='property' && page!=='location'){ if(lenis) lenis.scrollTo(0,{immediate:true}); else window.scrollTo(0,0); }
+setTimeout(()=>{ refreshIcons(); observeReveals(); if(window.ScrollTrigger) ScrollTrigger.refresh(); },80);
+}
+function parseHash(){
+const h=location.hash||'#/';
+if(h.startsWith('#/properties/')||h.startsWith('#/property/')){ const slug=h.split('/').pop(); navigate('property',slug); }
+else if(h==='#/properties'){ navigate('properties'); }
+else if(h.startsWith('#/locations/')||h.startsWith('#/location/')){ const slug=h.split('/').pop(); navigate('location',slug); }
+else navigate('home');
+}
+function observeReveals(){
+const io=new IntersectionObserver(entries=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } }); },{threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-zoom,.img-reveal,.stagger,.zoom-scroll,.grow-line').forEach(el=>io.observe(el));
+const cio=new IntersectionObserver(entries=>{ entries.forEach(e=>{ if(e.isIntersecting){ animateCounters(e.target); cio.unobserve(e.target);} }); },{threshold:0.4});
+document.querySelectorAll('.counter').forEach(c=>cio.observe(c));
+}
+function animateCounters(scope){
+(scope.parentElement?.parentElement||document).querySelectorAll('.counter').forEach(el=>{
+if(el.dataset.done) return; el.dataset.done='1';
+const target=parseInt(el.dataset.target); const dur=1600; const start=performance.now();
+function tick(t){ const p=Math.min((t-start)/dur,1); const eased=1-Math.pow(1-p,3); el.textContent=Math.floor(target*eased).toLocaleString('en-IN'); if(p<1) requestAnimationFrame(tick); }
+requestAnimationFrame(tick);
+});
+}
+
+/* SCROLL ANIMATIONS CORE */
+function initSmoothAndScrollFX(){
+try{
+if(window.Lenis){ lenis=new Lenis({ duration:1.25, easing:(t)=>Math.min(1,1.001-Math.pow(2,-10*t)), smoothWheel:true }); }
+}catch(e){}
+if(window.gsap && window.ScrollTrigger){
+gsap.registerPlugin(ScrollTrigger);
+if(lenis){ lenis.on('scroll', ScrollTrigger.update); gsap.ticker.add((t)=>lenis.raf(t*1000)); gsap.ticker.lagSmoothing(0); }
+else { /* native */ }
+
+gsap.to('#scrollProgress',{ scaleX:1, ease:'none', scrollTrigger:{ start:0, end:'max', scrub:0.3 } });
+
+gsap.to('#heroContent',{ y:-110, opacity:0.15, ease:'none', scrollTrigger:{ trigger:'#hero', start:'top top', end:'bottom 35%', scrub:true } });
+gsap.to('.hero-bg-wrap',{ scale:1.12, y:90, ease:'none', scrollTrigger:{ trigger:'#hero', start:'top top', end:'bottom top', scrub:true } });
+
+gsap.utils.toArray('[data-parallax]').forEach(el=>{
+const amt=parseFloat(el.dataset.parallax)||-12;
+gsap.to(el,{ yPercent:amt, ease:'none', scrollTrigger:{ trigger: el.closest('section')||el, start:'top bottom', end:'bottom top', scrub:1.2 } });
+});
+gsap.utils.toArray('.parallax-bg').forEach(el=>{
+gsap.fromTo(el,{ yPercent:-10 },{ yPercent:10, ease:'none', scrollTrigger:{ trigger: el.parentElement, start:'top bottom', end:'bottom top', scrub:true } });
+});
+
+gsap.utils.toArray('.sec-num').forEach(el=>{
+gsap.fromTo(el,{ x:60, opacity:0 },{ x:0, opacity:1, ease:'power3.out', scrollTrigger:{ trigger:el, start:'top 88%', end:'top 60%', scrub:1 } });
+});
+
+gsap.to('#timelineFill',{ height:'100%', ease:'none', scrollTrigger:{ trigger:'#howWrap', start:'top 75%', end:'bottom 55%', scrub:0.8 } });
+
+gsap.utils.toArray('.zoom-scroll img, .img-reveal img').forEach(img=>{
+gsap.fromTo(img,{ scale:1.18 },{ scale:1, ease:'none', scrollTrigger:{ trigger: img, start:'top bottom', end:'bottom top', scrub:1 } });
+});
+
+let lastY=window.scrollY, skewEls=[];
+function skewUpdate(){
+const y=window.scrollY; const v=Math.min(Math.abs(y-lastY)/28,1); lastY=y;
+document.querySelectorAll('#featuredRow .prop-card').forEach((c,i)=>{ c.style.transform=`translateY(0) skewX(${(v* (i%2? -1:1))*3}deg)`; clearTimeout(c._t); c._t=setTimeout(()=>c.style.transform='',120); });
+}
+if(lenis) lenis.on('scroll', skewUpdate); else window.addEventListener('scroll',skewUpdate,{passive:true});
+
+const cineRow=document.getElementById('cinematicRow');
+function cineScrollProgress(){
+const st=ScrollTrigger.create({ trigger:'#showcase', start:'top bottom', end:'bottom top', scrub:true,
+onUpdate:self=>{ document.getElementById('cineProgress').style.width=(self.progress*100)+'%'; } });
+}
+cineScrollProgress();
+
+ScrollTrigger.matchMedia({
+"(min-width: 1024px)": function(){
+const track=document.getElementById('cinematicRow');
+const getAmt=()=> Math.max(0, track.scrollWidth - document.documentElement.clientWidth + 64);
+gsap.to(track,{ x:()=>-getAmt(), ease:'none',
+scrollTrigger:{ trigger:'#showcase', start:'top top', end:()=>'+='+getAmt(), pin:true, scrub:1, invalidateOnRefresh:true, anticipatePin:1 } });
+}
+});
+} else {
+// Fallback without GSAP
+if(lenis){ function raf(t){ lenis.raf(t); requestAnimationFrame(raf);} requestAnimationFrame(raf); }
+window.addEventListener('scroll',()=>{
+const h=document.documentElement; const p=h.scrollTop/(h.scrollHeight-h.clientHeight);
+document.getElementById('scrollProgress').style.transform=`scaleX(${p})`;
+const heroC=document.getElementById('heroContent'); if(heroC){ heroC.style.transform=`translateY(${h.scrollTop*0.25}px)`; heroC.style.opacity=Math.max(0,1-h.scrollTop/700); }
+document.querySelectorAll('[data-parallax]').forEach(el=>{ const r=el.closest('section')?.getBoundingClientRect(); if(!r) return; const pr=(window.innerHeight/2-(r.top+r.height/2))/window.innerHeight; el.style.transform=`translateY(${pr*parseFloat(el.dataset.parallax||10)*2}px)`; });
+},{passive:true});
+}
+// side dots
+buildSideDots();
+window.addEventListener('scroll', onScrollCommon, {passive:true});
+}
+function buildSideDots(){
+const secs=[['hero','Home'],['featured','Featured'],['locations','Locations'],['villas','Villas'],['plots','Plots'],['heritage','Heritage'],['about','About'],['contact','Contact']];
+document.getElementById('sideDots').innerHTML=secs.map(([id,label])=>`<div class="side-dot" data-target="${id}" data-label="${label}"></div>`).join('');
+document.querySelectorAll('.side-dot').forEach(d=>d.addEventListener('click',()=>scrollToId(d.dataset.target)));
+const io=new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting){ document.querySelectorAll('.side-dot').forEach(d=>d.classList.toggle('active', d.dataset.target===e.target.id)); } }); },{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(([id])=>{ const el=document.getElementById(id); if(el) io.observe(el); });
+}
+function onScrollCommon(){
+const y=window.scrollY;
+document.getElementById('navbar').classList.toggle('scrolled', y>40);
+const toTop=document.getElementById('toTop');
+if(y>600){ toTop.classList.remove('hidden'); toTop.classList.add('flex'); requestAnimationFrame(()=>toTop.style.opacity='1'); }
+else { toTop.style.opacity='0'; setTimeout(()=>{ if(window.scrollY<=600){ toTop.classList.add('hidden'); toTop.classList.remove('flex'); } },300); }
+if(!window.gsap){ const h=document.documentElement; const p=h.scrollTop/(h.scrollHeight-h.clientHeight||1); document.getElementById('scrollProgress').style.transform=`scaleX(${p})`; }
+}
+
+/* HERO SLIDER */
+let heroIdx=0, heroTimer=null;
+function initHero(){
+const slides=document.querySelectorAll('.hero-slide'); const dots=document.querySelectorAll('#heroDots .dot');
+function go(i){ heroIdx=i%slides.length; slides.forEach((s,k)=>s.classList.toggle('active',k===heroIdx)); dots.forEach((d,k)=>d.classList.toggle('active',k===heroIdx)); }
+dots.forEach((d,k)=>d.addEventListener('click',()=>{ go(k); restart(); }));
+function restart(){ clearInterval(heroTimer); heroTimer=setInterval(()=>go(heroIdx+1),6000); }
+restart();
+const title=document.getElementById('heroTitle');
+const txt=title.innerHTML; // keep gradient em, animate whole with subtle entrance
+title.style.opacity='0'; title.style.transform='translateY(30px)';
+setTimeout(()=>{ title.style.transition='all 1.2s cubic-bezier(.22,1,.36,1)'; title.style.opacity='1'; title.style.transform='none'; },400);
+// cinematic drag
+const row=document.getElementById('cinematicRow');
+let down=false,sx=0,sl=0;
+row.addEventListener('pointerdown',e=>{ down=true; sx=e.clientX; sl=row.scrollLeft; row.classList.add('grabbing'); });
+window.addEventListener('pointermove',e=>{ if(!down) return; row.scrollLeft=sl-(e.clientX-sx); const max=row.scrollWidth-row.clientWidth; if(max>0) document.getElementById('cineProgress').style.width=(row.scrollLeft/max*100)+'%'; });
+window.addEventListener('pointerup',()=>{ down=false; row.classList.remove('grabbing'); });
+row.addEventListener('scroll',()=>{ const max=row.scrollWidth-row.clientWidth; if(max>0 && window.innerWidth<1024) document.getElementById('cineProgress').style.width=(row.scrollLeft/max*100)+'%'; },{passive:true});
+}
+
+/* GLOBAL EVENTS */
+function bindGlobal(){
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('open'));
+document.getElementById('closeMenu').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
+document.querySelectorAll('[data-route]').forEach(a=>a.addEventListener('click',e=>{ e.preventDefault(); document.getElementById('mobileMenu').classList.remove('open'); navigate(a.dataset.route); }));
+document.querySelectorAll('[data-scroll]').forEach(a=>a.addEventListener('click',e=>{
+e.preventDefault(); const id=a.dataset.scroll; document.getElementById('mobileMenu').classList.remove('open');
+if(!document.getElementById('page-home').classList.contains('active')){ navigate('home'); setTimeout(()=>scrollToId(id),350); }
+else scrollToId(id);
+}));
+document.getElementById('enquiryForm').addEventListener('submit',e=>{
+e.preventDefault();
+const n=document.getElementById('e-name').value.trim(), ph=document.getElementById('e-phone').value.trim();
+if(!n||!ph){ toast('Please add your name & phone'); return; }
+const msg=`Hi Modinaa, I'm ${n} (${ph}). I'm interested in ${document.getElementById('e-interest').value} | Location: ${document.getElementById('e-loc').value} | Budget: ${document.getElementById('e-budget').value} | Timeline: ${document.getElementById('e-time').value}. ${document.getElementById('e-msg').value}`;
+window.open(waLink(msg),'_blank'); toast('Opening WhatsApp with your enquiry...');
+});
+document.getElementById('lightbox').addEventListener('click',e=>{ if(e.target.id==='lightbox') closeLightbox(); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ closeLightbox(); toggleSheet(false); document.getElementById('mobileMenu').classList.remove('open'); } if(!document.getElementById('lightbox').classList.contains('hidden')){ if(e.key==='ArrowRight') lbNav(1); if(e.key==='ArrowLeft') lbNav(-1); } });
+window.addEventListener('hashchange',parseHash);
+}
+
+window.addEventListener('load',()=>{
+renderHome(); renderFilterPanels(); renderProperties(); bindGlobal(); initHero(); observeReveals(); initSmoothAndScrollFX();
+setTimeout(()=>document.getElementById('loader').classList.add('hide'),1300);
+setTimeout(()=>{ if(window.ScrollTrigger) ScrollTrigger.refresh(); refreshIcons(); },1600);
+});
+document.addEventListener('DOMContentLoaded',()=>{ refreshIcons(); });
+</script>
+</body>
+</html>
